@@ -445,7 +445,7 @@
         type: 'js'
     });
     In.add('angular', {
-        path: '../js/angular.min.js',
+        path: '//cdn.bootcss.com/angular.js/1.0.8/angular.min.js',
         type: 'js'
     });
     In.add('bootstrapcss3', {
