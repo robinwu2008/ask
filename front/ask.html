@@ -1,72 +1,76 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html ng-app ng-controller="MainCtrl">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 新 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="//cdn.bootcss.com/angular.js/1.0.8/angular.min.js"></script>
+
+
+	<script type="text/javascript">
+		function MainCtrl($scope) {
+			$scope.phones = [
+				{"pn": "Nexus S",
+					"number": "Fast just got faster with Nexus S." },
+				{"pn": "Nexus S",
+					"number": "Fast just got faster with Nexus S." }
+			];
+			$scope.addNewline=function  ($scope){
+				console.log("i am working 我是增加按钮")
+			}
+			$scope.newAsk=function($scope){
+				console.log("i am newAsk 我是询价按钮")
+			}
+			$scope.addNewlinedb=function  ($scope){
+				console.log("i am workingsb 我是增加按钮")
+			}
+			$scope.newAskdb=function($scope){
+				console.log("i am newAsksb 我是询价按钮")
+			}
+			$scope.copy=function(){
+				console.log("i am not work , i don't know way ")
+			}
+		}
+	</script>
 </head>
-
-
 <body>
 
 <div class="conainer">
 	<p>询价：</p>
 	<form class="form-inline">
 		<div class="form-group">
-		<label>供应商：富昌电子</label>
+		<label>供应商：富昌电子{{"asdasd"}}</label>
 		
 	     </div>
 		<br/>
 		
-		<button type="submit" class="btn btn-primary">询价</button>
+		<button type="submit" class="btn btn-primary"  ng-click="newAsk()"  ng-dblclick="newAskdb()">询价</button>
 		<p>
+		<input type="text" ng-copy="copy()" name="aaa" ng-init=""  />
 		<table class="table">
 			<tr>
 				<td>料号</td>
 				<td>数量</td>
 				<td>交期</td>
 				<td>备注</td>
-			    
-
 			</tr>
 			<tr>
-				<td><button>新增</button></td>
+				<td><button  ng-click="addNewline()"  ng-dblclick="addNewlinedb()" >新增</button></td>
 				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
-				<td>max232-11</td>
+			<tr ng-repeat="phone in phones">
+				<td>{{phone.pn}}</td>
 				<td>
-					<input type="text" class="form-control" id="exampleInputAmount" placeholder="100">
+					{{phone.number}}
 				</td>
 				<td></td>
 				<td><input type="text" class="form-control" id="exampleInputAmount" placeholder="备注"></td>
 				
 			</tr>
-			<tr>
-				<td>lm358</td>
-				<td>
-					<input type="text" class="form-control" id="exampleInputAmount" placeholder="100">
-				</td>
-				<td></td>
-				<td>2015生产，急</td>
-				
-			</tr>
-			<tr>
-				<td>1n4748</td>
-				<td>1000</td>
-				<td></td>
-				<td>2015生产，急</td>
-			</tr>
-			<tr>
-				<td>9000000-1</td>
-				<td>1000</td>
-				<td></td>
-					<td>2015生产，急</td>
-			</tr>
+
 		</table>
 	</form>
 	
