@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+.m_l55{ margin-left:55px;}
+.m_l140{ margin-left:115px; }
+.m_t20{ margin-top:20px}
+.m_t30{ margin-top:30px}
+.m_t40{ margin-top:40px}
+.red{color:#f00}
+.ie_dw {
+width: 100%;
+height: 1000px;
+background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important;
+filter: Alpha(opacity = 80);
+background-color: #fff;
+overflow: hidden;
+}
+
+
+.overlay {position: fixed;top: 0;left:0px;bottom: 0;z-index: 998;_padding: 0 20px 0 0;}
+.enquiry_wind{ width:435px; height:310px; padding:15px 0 60px 30px; font-size: 15px; font-family:"微软雅黑"; color:#6C6C6C; background-color:#FFF;  position: relative; z-index: 100;   border:solid 6px #6D6D6D;}
+.enquiry_close{ width:24px; height:24px; background:url(../images/close.jpg) no-repeat; border:none; cursor:pointer;}
+.title_enquiry{ width:200px; height:50px; background:url(../images/title_dw.gif) no-repeat left top; line-height:40px; font-size:22px; font-family:"微软雅黑"; font-weight:400; margin-top:30px; letter-spacing:0.2em; color:#fff; position:absolute; left:-20px; top:-25px; z-index: 200; text-align:center }
+.enquiry_wind .enquiry_box{ width:194px; height:40px; border:solid 3px #e6e6e6; font-size:14px; overflow:hidden }
+.enquiry_wind .enquiry_box_none{ width:600px; height:40px; font-size:14px; margin-top:2px; overflow:hidden }
+.enquiry_wind .name,.enquiry_wind .name2{ width:60px; height:40px; line-height:40px; font-weight:bolder; text-align:right; background-color:#e4eef9;padding-right:15px; padding-left:20px }
+.enquiry_wind .name2{background-color:#e6e6e6 }
+.enquiry_wind .name{background-color:#e4eef9 }
+.enquiry_wind .input_box,  .enquiry_wind .input_box_{ outline:none; width:300px; height:40px; line-height:40px; border:none; padding-left:5px; color:#434343; background-color:#ebebeb; overflow:hidden }
+.enquiry_wind .input_box2, .enquiry_wind .input_box2_{ outline:none; width:70px; height:40px; line-height:40px; border:none; _border:1px solid #fff;  outline:none; padding-left:5px; font-size:14px; font-weight:bolder; overflow:hidden }
+.enquiry_wind .input_box2_, .enquiry_wind .input_box_{background-color:#ebebeb;}
+.enquiry_wind .input_box2_{ width:98px; }
+
+.enquiry_back{ width:198px; height:37px; background:url(../images/enquiry_back.jpg) no-repeat; border:none; cursor:pointer;}
+.enquiry_tj{ width:198px; height:37px; background:url(../images/enquiry_tj.jpg) no-repeat; border:none; cursor:pointer;}
+.enquiry_qx{ width:198px; height:37px; background:url(../images/enquiry_qx.jpg) no-repeat; border:none; cursor:pointer; }
+
+
+
+.qjd_table{ width:1000px;  margin-left:auto; margin-right:auto}
+.qjd_title{ width:200px; height:50px; background:url(../images/title_dw.gif) no-repeat left top; line-height:40px; font-size:22px; font-family:"微软雅黑"; font-weight:400; margin-top:10px; letter-spacing:0.2em; color:#fff; text-align:center}
+.qjd_stocklist{ width:940px; margin-top:12px; border:1px solid #e0e0e0; border-top:3px solid #009ae6; color:#666; overflow:hidden; font-size:12px}
+.qjd_stocklist .title .more{ line-height:35px;}
+.qjd_stocklist .table_th{ height:35px; line-height:35px; font-size:12px; background-color:#eaf8ff; color:#333; font-weight:bolder; border-right:1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0 }
+.qjd_stocklist .table_th_on{ borde-rightr:none }
+.qjd_stocklist .table_model{ padding-left:10px; font-weight:bolder}
+.qjd_stocklist .table_td{border-right:1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; line-height:43px;}
+.qjd_stocklist .table_td_on{ border-right:none}
+.qjd_stocklist .del_button{ width:15px; height:15px; background:url(../images/del.gif) no-repeat; cursor:pointer; border:none }
+.qjd_stocklist .table_brand{ width:100%; height:45px; padding-top:15px; border-bottom:1px solid #d9d9d9; line-height:20px; color:#666;}
+.qjd_stocklist .table_brand img{ height:40px; margin-left:5px;}
+.qjd_stocklist .table_td_first{ border:1px solid #d9d9d9; border-right:1px solid #e5e5e5;border-top:none;padding:5px;  }
+.qjd_stocklist .table_td_first img{ width:80px; width:80px; border:1px solid #E3E3E3; }
+.qjd_stocklist .table_td_first .img_name{ line-height:25px; overflow:hidden}
+.qjd_stocklist .table_td_first .img_name a{ color:#666; text-decoration:none}
+.qjd_stocklist .table_td_first .img_name a:hover{ color:#0080FF; text-decoration:none}
+.qjd_stocklist .table_td_last{ border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; padding:5px;line-height:25px; }
+.del_info{ width:15px; height:15px; background:url(../images/del_pic.jpg) no-repeat; cursor:pointer; border:none; }
+.inquiry_box{ height:30px; width:300px; margin-left:5px; margin-top:10px}
+.inquiry_name{ font-size:14px; line-height:30px; color:#666; font-weight:bolder }
+.inquiry_input{ height:30px; width:150px; border:1px solid #C1C1C1; line-height:30px; padding-left:3px;}
+

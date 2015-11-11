@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script type="text/javascript" src="js/in.js" autoload="true" core="js/jquery.min.1.10.2.js"></script>
+		<script type="text/javascript">
+			In.ready('bootstrapjs3', 'angular', 'bootstrapcss3', 'jquery', function() {
+				var app = angular.module('myapp', []);
+				app.controller('customersController', customersController);
+
+				function customersController($scope, $http) {
+					key = $scope.key1; 
+					$scope.search = function(data) { 
+						findqiyebykey(data, $scope, $http);
+					};
+				}
+ 
+				function findqiye($scope, $http) {
+					findqiyebykey("深圳", $scope, $http);
+				}
+
+				function findqiyebykey(key1, $scope, $http) {
+					$http.get('/qiye?name=' + key1).success(function(data) {
+						$scope.qiye = data;
+					});
+				}
+			});
+		</script>
+
+	</head>
+
+	<body ng-app='myapp' ng-controller='customersController'>
+		<input ng-model="key1" />
+		<button ng-click="search(key1)">go</button>
+		<table class="table table-striped table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>name</th>
+					<th>message </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in qiye">
+					<td>{{x.name}}</td>
+					<td>{{x.message}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</body>
+
+</html>

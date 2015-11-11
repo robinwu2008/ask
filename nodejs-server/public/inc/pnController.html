@@ -1,0 +1,97 @@
+<td style="width: 22%;min-width: 270px;">
+	<table style="width: 100%;margin-top: 13px;">
+		<tr style="text-align: center;">
+			<td style="width: 10%;border-top:0px;" ><a href="###" id="{{entry}}" onclick="hidtr(this)">X</a>
+			</td>
+			<td style="width: 10%;border-top:0px;" class="rows"></td>
+			<td style="width: 60%;border-top:0px;">
+				<input type="text" ng-model="skey" id="skey" qegooautoComplete="auto" dataUrl="/search?name=" style="width: 120px;height: 26px;" />
+				<button ng-click="search(skey)" style="display: none;">go</button>
+			</td>
+			<td style="width: 20%;border-top:0px;">
+				<input type="number" ng-model="pnnumber" id="parse_{{entry}}" class="pnnumber" ng-change="change(pnnumber);" style="width: 50px;height: 26px;display: none;" />
+				<input type="button" name="parse" class="parse" value="parse" style="width: 50px;height: 26px; display: block;"/>
+			</td>
+		</tr>
+	</table>
+</td>
+<td style="width: 15%;min-width: 151px;">
+	<div class="dropdown " style="margin-top: 11px;" ng-if="mfs.length>0"> {{mfs[0].mfs}}/{{mfs[0].pn}} 
+		<a href="#" class="" data-toggle="dropdown" aria-expanded="false" >
+         <i class="1 icon-chevron-down bigger-125"></i>
+          <span class="caret" ng-if="mfs.length>1"></span>
+        </a>
+		<ul class="dropdown-menu" role="menu">
+			<div ng-repeat="one in mfs">
+				<li role="presentation" style="width: 183px;">
+					<a role="menuitem" tabindex="-1" href="#" style="padding-left: 5px;">{{one.mfs}}/{{one.pn}}</a>
+					<a>
+					<div style="width: 25px;height: 25px;margin-right: 5px; float: right;text-align: center;" onmouseover="showinfor()"> 
+					<span class="label label-sm label-warning">1</span>
+					<div style="display: none;" class="showsupplier">
+						<table class="table table-bordered" style="min-width: 230px;">
+							<tr>
+								<th>以下2家有库存且满足预订量：</th>
+							</tr>
+							<tr>
+								<td>digikey</td>
+							</tr>
+							<tr>
+								<td>mouser</td>
+							</tr>
+							<tr>
+								<th>以下1家库存不足预订量：</th>
+							</tr>
+							<tr>
+								<td>chip1stiop</td>
+							</tr>
+							<tr>
+								<th>1家预订量不满足起订量>1：</th>
+							</tr>
+						</table>
+					</div>
+					</div>
+					</a>
+					<!--<div style="width: 25px;height: 25px;margin-right: 5px;background: #18A0EA;float: right;">1</div> 蓝色-->
+					<!--<div style="width: 25px;height: 25px;margin-right: 5px;background: #49C24F;float: right;">1</div> 绿色-->					
+				</li>
+			</div>
+		</ul>
+	</div>
+</td>
+<td style="min-width: 27%;min-width: 275px;">
+	<table style="width: 100%;">
+		<tr style="">
+			<td ng-model="digikeyprice" style="width: 25%;border-top:0px;">1.2345<br/>moq:10</td>
+                                                   <!--
+                                                   	作者：jiangwei_163@163.com
+                                                   	时间：2014-12-10
+                                                   	描述：取值方式{{digikey[0].currency}}
+                                                   -->
+			<td ng-model="mouserprice" style="width: 25%;border-top:0px;">1.2345<br/><span style="color: red;">moq:100</span><br/>bag</td>
+			<td ng-model="elementprice" style="width: 25%;border-top:0px;">1.2345<br/><span style="color: red;">no-stock</span></td>
+			<td ng-model="chip1stopprice" style="width: 25%;border-top:0px;">--</td>
+		</tr>
+	</table>
+</td>
+<td style="width: 36%;line-height: 55px;min-width: 363px;">
+	<table style="width: 100%;" ng-init="pnnumber=1;">
+		<tr style="">
+			<td style="width: 34%;border-top:0px;">{{mfs[0].spn}}</td>
+			<td ng-if="getunitPrice(pnnumber)>0" style="width: 22%;border-top:0px;">{{unitPrice | number:2 }}</td>
+			<td ng-if="pnnumber*unitPrice>0" style="width: 22%;border-top:0px;">{{pnnumber*unitPrice | number:2}}</td>
+			<td ng-if="batch*pnnumber*unitPrice>0" style="width: 22%;border-top:0px;"> {{batch*pnnumber*unitPrice | number:2}}</td>
+		</tr>
+	</table>
+</td>
+
+<script>
+	function showinfor(){
+		$(".showsupplier").hide();
+		if($(".showsupplier").is(".visible")==false){
+			$(".showsupplier").show();
+		}else{
+			$(".showsupplier").hide();
+		}
+	}
+</script>

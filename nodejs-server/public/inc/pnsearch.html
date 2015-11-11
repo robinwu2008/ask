@@ -1,0 +1,109 @@
+<div>
+	<div id="navbar" class="navbar-collapse collapse " style="background-color: white;">
+		<form class="navbar-form navbar-right" role="form">
+			<div class="col-lg-6" style="margin-left: 200px;">
+				<div class="input-group">
+					<input type="text" class="form-control  pnkey" qegooautoComplete="auto" dataUrl="/search?name=">
+					<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button" ng-click="runme()">Go!</button>
+
+      								</span>
+				</div>
+				<!-- /input-group -->
+			</div>
+		</form>
+	</div>
+	<div role="tabpanel" class="tab-pane active" id="storedate" style="margin-right: 15px;min-height: 580px;background-color: white;padding-left: 20px;">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#digikey" role="tab" data-toggle="tab">Digikey  <span class="badge"  ng-bind="digikeylength"></span></a>
+			</li>
+			<li role="presentation"><a href="#mouser" role="tab" data-toggle="tab">mouser  <span class="badge" ng-bind="mouserlength"></span></a>
+			</li>
+			<li role="presentation"><a href="#element" role="tab" data-toggle="tab">element  <span class="badge" ng-bind="elementlength"></span></a>
+			</li>
+			<li role="presentation"><a href="#chip1stop" role="tab" data-toggle="tab">chip1stop  <span class="badge"></span></a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="digikey">
+				<div class="table-responsive">
+					<table class="table table-condensed table-bordered    ">
+						<thead>
+							<tr class="active">
+								<th>料号 pn</th>
+								<th>库存</th>
+								<th>价格</th>
+								<th>链接</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="one in digikey  ">
+								<td>{{one.pn| uppercase}}</td>
+								<td>{{one.kucun}}</td>
+								<td>{{one.jiage}}</td>
+								<td><a href="{{one.url}}" target="_blank">去管网</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="mouser">
+				<div class="table-responsive">
+					<table class="table table-condensed table-bordered  ">
+						<thead>
+							<tr class="active">
+								<th>料号 pn</th>
+								<th>库存</th>
+								<th>价格</th>
+								<th>链接</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="one in mouser   ">
+								<td>{{one.pn| uppercase}}</td>
+								<td>{{one.kucun}}</td>
+								<td>{{one.jiage}}</td>
+								<td><a href="{{one.url}}" target="_blank">去管网</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="element">
+				<div class="table-responsive">
+					<table class="table table-condensed table-bordered  ">
+						<thead>
+							<tr class="active">
+								<th>料号 pn</th>
+								<th>库存</th>
+								<th>价格</th>
+								<th>链接</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="one in element   ">
+								<td>{{one.pn| uppercase}}</td>
+								<td>{{one.kucun}}</td>
+								<td>{{one.jiage}}</td>
+								<td><a href="{{one.url}}" target="_blank">去管网</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="chip1stop">
+				<div class="table-responsive">
+					 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div role="tabpanel" class="tab-pane active" id="actualdata">
+	</div>
+</div>

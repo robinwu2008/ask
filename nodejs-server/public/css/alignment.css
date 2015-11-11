@@ -1,0 +1,155 @@
+/**锟皆憋拷页锟斤拷**/
+.maintest_table{ width:950px; margin-left:auto; margin-right:auto;}
+
+.maintest_title{width:950px; line-height:37px; text-indent:2em; font-size:16px; display:block; background:url(../images/Batch_top111.gif) no-repeat top; font-family:Arial, Helvetica, sans-serif; color:#004a99; font-weight:bold; height:37px;}
+
+.table_styl1{ background:url(../images/link_top.gif) repeat-x; width:948px; line-height:30px;border:#CCC solid 1px; border-bottom:none; color:#004a99; font-weight:bold; text-align:center ; font-size:14px; float:left;}
+
+.table_alignment{ width:20%; margin-bottom:5px; border-top:#CCC solid 1px; border-left:#CCC solid 1px; line-height:30px; float:left;}
+.table_alignment td{ border-bottom:#CCC solid 1px; border-right:#CCC solid 1px; text-align:center; height:30px; overflow:hidden; }
+
+.table_alignment th{border-bottom:#CCC solid 1px; border-right:#CCC solid 1px; padding-left:10px; text-align:left; font-weight:normal; vertical-align:top; background:#f4f4f4;}
+
+.bj{background:#fdfcf6;}
+.frame{border:1px solid #ccc; margin:10px auto;}
+.alignment_font{font-weight:bold; font-size:13px;}
+
+/**锟斤拷锟斤拷员锟�*/
+.compare{
+	width:178px;
+	float:right;
+	height:auto;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background:#f4f4f4;
+	overflow:hidden;
+}
+.compare2{
+	width:178px;
+	height:auto;
+	float:right;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background:#fdfcf6;
+	overflow:hidden;
+}
+.compare_title{width:180px; height:31px; line-height:31px; background:url(../images/shop_line2.gif) repeat-x top; float:left;}
+.compare_title p{width:180px; height:31px; line-height:31px; float:left; padding-left:10px; display:block;}
+
+.oneing{width:130px; height:31px; float:left; text-indent:1em; display:block; font-weight:bold;}
+.twoing{width:15px; height:20px; float:right; display:block; margin:5px;}
+
+.compare_main{width:165px; float:left; display:block; margin:10px 5px 10px 10px; _margin-left:3px;}
+.compare_main .one{width:165px; height:72px; float:left; display:block; margin-top:6px; border-bottom:1px dotted #ccc;}
+.compare_main .two{width:62px; margin:1px; height:62px; border:1px solid #ccc; float:left; display:block;}
+.compare_main .three{width:62px; height:50px; overflow:hidden; line-height:18px; padding:5px 1px; float:left; margin-left:10px;_margin-left:5px; display:block; color:#004a99;}
+.compare_main .four{width:15px; height:50px; float:right; display:block; margin:5px;}
+
+.orange_bj{width:404px; height:40px; background:url(../images/orange_back.gif) no-repeat top; display:block; text-align:center; line-height:20px;margin: auto;}
+.orange_bj a{color:#a34f0f;}
+.orange_bj .one{width:102px; height:20px; background:url(../images/orange_one.gif) no-repeat top; display:block; margin:10px 15px auto 76px; _margin:10px 15px auto 38px; float:left;}
+.orange_bj .one a:hover{background:url(../images/orange_one2.gif) no-repeat top; display:block;} 
+
+.orange_bj .two{width:58px; height:20px; background:url(../images/orange_one.gif) no-repeat top; display:block; margin:10px 15px auto 0px; float:left;}
+.orange_bj .two a:hover{background:url(../images/orange_two2.gif) no-repeat top; display:block;}
+
+
+#toolbar1{
+ margin:auto;}
+
+
+.Menubox {
+width:590px;
+background:url(../images/orange_beij.gif);
+height:28px;
+float:right;
+line-height:28px;
+}
+.Menubox ul{
+margin:0px;
+padding:0px;
+}
+.Menubox li{
+float:left;
+display:block;
+cursor:pointer;
+width:104px;
+text-align:center;
+padding-right:10px;
+color:#333;
+}
+.people{ width:114px; height:27px; float:left; cursor:pointer;}
+.people1{width:13px; height:13px; float:left; margin-top:6px;background:url(../images/open_22.gif) no-repeat; cursor:pointer;}
+.people2{width:86px; float:left; margin-left:8px; cursor:pointer;}
+.people2 img{ height:20px; line-height:20px; margin:3px; float:left; clear:both;}
+.people2 a:hover{ color:#004a99;}
+ 
+
+
+.Menubox li.selected{
+padding:0px;
+border:1px solid #ccc;
+border-top:none;
+width:105px;
+padding-right:10px;
+background:url(../images/orange_beij2.gif) no-repeat top;
+color:#004a99;
+height:27px;
+line-height:27px;
+}
+.Menubox li.normal{
+}
+
+.Contentbox{
+clear:both;
+float:left;
+margin-top:0px;
+width:345px;
+height:auto;
+}
+
+
+.orange_img{border:1px solid #ccc; border-bottom:none; width:343px; float:left; height:196px;background:#fff;}
+.orange_img .top{ background:url(../images/shop_line2.gif) repeat-x bottom; height:30px; line-height:30px; width:343px; display:block; font-weight:bold;}
+.orange_img .main{ width:343px; height:auto; margin:auto;}
+.orange_img .main1{ width:333px; height:24px; line-height:24px; margin:10px auto 0; border-bottom:1px solid #ccc; padding-left:10px;}
+.orange_img .main1 li{ width:100px; height:24px; display:block; float:left; text-align:center;}
+.orange_img .main1 li a{color:#333;}
+.orange_img .main1 li a:hover{color:#004a99; height:24px; font-weight:bold; border:1px solid #ccc; border-bottom:none;}
+
+.hidden{display:none;}
+.textDiv{margin:10px 40px 10px;text-align:center;}
+h2{margin:0px 10px;background:#ccc;padding:5px;}
+.scrolldoorFrame{width:343px;margin:0px auto;overflow:hidden; float:left;}
+.scrollUl{width:328px; height:auto; float:left; padding-left:15px;}
+.scrollUl li{float:left; padding-left:10px; padding-right:10px;}
+.scrollUl .selected{cursor:pointer;border:1px solid #CCC; background:#FFF; background:url(../images/shop_line2.gif) top repeat-x; margin:5px;padding:2px; color:#004a99; font-weight:bold;}
+.scrollUl .normal{cursor:pointer;border:0px solid #CCC; margin:5px;padding:2px;}
+
+.box1{width:320px; height:120px; float:left; margin-left:20px; _margin-left:12px; margin-top:5px; overflow:hidden;}
+.box2{width:auto; border:1px solid #ccc; height:18px; line-height:18px; float:left; padding:2px 3px 2px 10px; display:block; margin-right:10px; margin-bottom:6px; word-break: break-all;}
+.box2 .one{float:left; margin-right:10px; max-width: 120px; height:18px; overflow: hidden;}
+.box2 .two{float:left; width:15px; height:18px;}
+
+.box3{width:auto; border:1px solid #ffaa66; height:18px; line-height:18px; float:left; padding:2px 3px 2px 10px; display:block; margin-right:10px; color:#ff7300; margin-bottom:6px; word-break: break-all;}
+.box3 .one{float:left; margin-right:10px; max-width: 120px; height:18px; overflow: hidden;}
+.box3 .one a{color:#ff7300;}
+.box3 .two{float:left; width:15px; height:18px;}
+
+.box_title{color:#666; width:300px; height:20px; line-height:20px; float:left;}
+.box_main{width:320px; height:100px; float:left;}
+.box_main1{width:18px; height:30px; float:left; margin-top:35px;}
+.box_main2{width:274px; _width:272px; height:100px; float:left; overflow:hidden;}
+.box_main2 dl{width:60px; height:95px; float:left; display:block; margin:5px 4px; _margin-right:2px;}
+.box_main2 dt{width:58px; height:58px; float:left; display:block; border:1px solid #ccc;}
+.box_main2 dd{width:60px; height:32px; margin-top:3px; line-height:16px; float:left; display:block; overflow:hidden; color:#004a99;}
+
+.box_main3{width:18px; height:30px; float:left; margin-top:35px; margin-right:10px;}
+
+.company{width:100px; height:90px; float:left; margin-right:10px;_margin-right:3px; margin-left:20px; margin-top:8px;}
+.company_logo{width:100px; height:50px; border:1px solid #ccc; float:left;}
+.company_font{width:100px; height:32px; float:left; line-height:16px; margin-top:8px; overflow:hidden;}
+.company_font a{color:#004a99;}
+.company_font a:hover{color:#004a99; text-decoration:underline;}
+
+.but2{ width:90px; height:21px;background:url(../images/but_02.gif) no-repeat; border:none;cursor:pointer; margin-bottom:10px;}

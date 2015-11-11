@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */ 
+body{ font-family:"SimSun"; }
+html, body, table, img, ul,dl,dd,h1,h2,h3,h4,h5,h6, form, p , button, div{ padding:0; margin:0; border:0px }
+ul, li{ list-style:none}
+.clear{ clear:both; overflow:hidden; margin:0px;} 
+.float_l{ float:left}
+.float_r{ float:right} 
+.page_404{ width:1078px; margin-left:auto; margin-right:auto; border-bottom:1px solid #d5d5d5; padding-bottom:200px; margin-top:95px}
+.page_404 .logo_page{ width:310px; height:67px; background:url(../img/maint_logo.gif) no-repeat; border-right:1px solid #c8c8c8}
+.page_404 .logo_slogan_box{ width:290px; margin-top:5px}
+.page_404 .logo_slogan{ width:290px; _width:295px; line-height:28px; color:#c0c0c0; margin-left:13px; font-size:20px; font-family:"Microsoft YaHei"; letter-spacing:0.03em }
+.page_404 .page_search{ width:450px; height:34px;border:2px solid #bfbfbf; margin-right:40px; _margin-right:20px; margin-top:25px;}
+.page_404 .error_box{ width:405px; height:95px;margin-left:auto; margin-right:auto; margin-top:140px }
+.page_404 .error_box .go_home_but{ width:85px; height:31px; background:url(../img/go_home.jpg) no-repeat; border:none; cursor:pointer; outline:none; margin-top:57px; margin-left:43px}
+
+/* 404底部 */
+.page404_pagefoot{ width:1200px; height:50px; margin-left:auto; margin-right:auto;    font-size:12px; }
+.page404_pagefoot .info_link{ width:247px; height:20px; margin-left:auto; margin-right:auto; line-height:20px;  background-color:#FFF  }
+.page404_pagefoot .info_link a{ color:#9e9e9e; text-decoration:none; margin-left:15px; margin-right:15px; float:left }
+.page404_pagefoot .info_link a:hover{ text-decoration:underline }
+.page404_pagefoot .info_link span{ color:#d8d8d8; float:left}
+.page404_pagefoot .copyright{ width:230px; line-height:20px;  color:#9e9e9e; margin-left:auto; margin-right:auto; margin-top:15px; text-align:center; padding-bottom:20px}

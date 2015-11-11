@@ -1,0 +1,1442 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+/* 基础颜色 */
+/* 网站基本常用颜色（包含字体、用色、背景色、底纹色等） */
+.gray9b {
+  color: #9b9b9b; }
+
+.grayd {
+  color: #dddddd; }
+
+.gray8e {
+  color: #8e8e8e; }
+
+.gray90 {
+  color: #909090; }
+
+.YaHei {
+  font-family: "Microsoft YaHei"; }
+
+.SimSun {
+  font-family: "SimSun"; }
+
+.Arial {
+  font-family: "Arial"; }
+
+.linediv_bottom {
+  border-bottom: 1px solid #ddd; }
+
+.linediv_top {
+  border-top: 1px solid #ddd; }
+
+/* 常用触发样式 */
+/* 鼠标经过点击、链接变色等 */
+.bule0086cd {
+  color: #0086cd; }
+  .bule0086cd a {
+    color: #0093db;
+    text-decoration: none; }
+    .bule0086cd a:hover {
+      text-decoration: underline; }
+
+.orgea8105 {
+  color: #ea8105; }
+  .orgea8105 a {
+    color: #ea8105;
+    text-decoration: none; }
+    .orgea8105 a:hover {
+      text-decoration: underline; }
+
+.gray8e {
+  color: #8e8e8e; }
+  .gray8e a {
+    color: #8e8e8e;
+    text-decoration: none; }
+    .gray8e a:hover {
+      text-decoration: underline; }
+
+/* 基础位置样式 */
+/* 浮动类 */
+.float_l {
+  float: left; }
+
+.float_r {
+  float: right; }
+
+/* 浮动清除 */
+.clear {
+  clear: both;
+  overflow: hidden;
+  margin: 0px; }
+
+/* 字体大小 */
+.f12 {
+  font-size: 12px; }
+
+.f14 {
+  font-size: 14px; }
+
+.f16 {
+  font-size: 16px; }
+
+/*------------------------ 弹出窗口 -------------------------*/
+/* 首页 建议box */
+.suggest_box {
+  width: 510px;
+  height: 300px;
+  position: absolute;
+  right: -150px;
+  top: -300px;
+  z-index: 0; }
+  .suggest_box .suggest_te {
+    width: 510px;
+    height: 283px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    position: relative; }
+    .suggest_box .suggest_te .arrow_d {
+      position: absolute; }
+
+/*搜索结果页 买家服务阶梯价*/
+.inquiry_box {
+  width: 225px;
+  padding: 7px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  z-index: 0;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px;
+  overflow: hidden; }
+  .inquiry_box .cost_buy {
+    width: 225px;
+    height: 25px;
+    color: #ea8105;
+    line-height: 25px;
+    background: url(/img/prompt_wind.gif) no-repeat 20px center; }
+  .inquiry_box .buy_list_qqline {
+    width: 230px;
+    color: #333333; }
+    .inquiry_box .buy_list_qqline .qq_take {
+      width: 82px;
+      height: 28px;
+      border: none;
+      outline: none; }
+    .inquiry_box .buy_list_qqline .tel_link_buy {
+      width: 110px;
+      font-size: 12px;
+      height: 28px;
+      line-height: 35px;
+      text-align: left; }
+  .inquiry_box .num_input {
+    width: 70px;
+    height: 24px;
+    _height: 20px;
+    outline: none;
+    padding-left: 3px;
+    border: 1px solid #cccccc; }
+  .inquiry_box .numb_up_down {
+    width: 13px;
+    height: 22px; }
+    .inquiry_box .numb_up_down .number_up {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_up.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      border: none; }
+    .inquiry_box .numb_up_down .number_down {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_down.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      margin-top: 2px;
+      border: none; }
+  .inquiry_box .inquiry_sure_butt {
+    width: 52px;
+    height: 23px;
+    background: url(/img/inquiry_sure.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    border: none; }
+
+.inquiry_box2 {
+  width: 135px; }
+
+.inquiry_name {
+  width: 50px;
+  line-height: 25px; }
+
+.inquiry_price_box {
+  width: 150px; }
+  .inquiry_price_box .inquiry_price {
+    width: 145px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e6e6e6; }
+    .inquiry_price_box .inquiry_price .number2 {
+      width: 50px;
+      text-align: left;
+      font-weight: bolder;
+      color: #6d6d6d; }
+    .inquiry_price_box .inquiry_price .price2 {
+      text-align: left;
+      color: #333333; }
+
+/* 官网详情 */
+.Official_set_box {
+  width: 300px;
+  padding: 7px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px;
+  overflow: hidden; }
+
+/* 回到页面顶部 买家服务 客服 */
+.go_top {
+  width: 54px;
+  height: 110px;
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  z-index: 999; }
+  .go_top .top_butt {
+    width: 54px;
+    height: 54px;
+    background: url(/img/top_an_3.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none; }
+  .go_top .shopping_car_box {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    margin-top: 2px;
+    background: url(/img/add_g_3.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none; }
+    .go_top .shopping_car_box .number {
+      height: 12px;
+      position: absolute;
+      top: 7px;
+      left: -5px;
+      z-index: 9999; }
+      .go_top .shopping_car_box .number .left_pic {
+        width: 5px;
+        height: 12px;
+        display: block;
+        background: url(/img/number_dw_l.gif) no-repeat left; }
+      .go_top .shopping_car_box .number .right_pic {
+        height: 12px;
+        line-height: 12px;
+        color: #007fc4;
+        font-size: 11px;
+        font-family: Arial;
+        background: url(/img/number_dw_r.gif) no-repeat right;
+        padding-right: 6px;
+        font-weight: bolder; }
+    .go_top .shopping_car_box .buy_list {
+      width: 223px;
+      background-color: white;
+      position: absolute;
+      bottom: 35px;
+      left: -230px;
+      z-index: 1000; }
+      .go_top .shopping_car_box .buy_list .list_title {
+        width: 60px;
+        font-size: 14px;
+        line-height: 28px;
+        font-family: "SimSun";
+        color: #272727;
+        margin-left: 12px; }
+      .go_top .shopping_car_box .buy_list .list_more {
+        font-size: 12px;
+        width: 42px;
+        line-height: 28px;
+        margin-right: 12px; }
+        .go_top .shopping_car_box .buy_list .list_more a {
+          color: #9b9b9b;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .list_more a:hover {
+            color: gray6d;
+            text-decoration: none; }
+      .go_top .shopping_car_box .buy_list .list_li_show {
+        width: 223px;
+        height: 53px;
+        font-size: 12px; }
+      .go_top .shopping_car_box .buy_list .list_li_show_b {
+        background-color: #e6e6e6; }
+      .go_top .shopping_car_box .buy_list .product_name {
+        line-height: 30px;
+        width: 150px;
+        height: 30px;
+        overflow: hidden;
+        text-align: left;
+        margin-left: 12px; }
+        .go_top .shopping_car_box .buy_list .product_name a {
+          color: #0086cd;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .product_name a:hover {
+            text-decoration: underline; }
+      .go_top .shopping_car_box .buy_list .delet_li {
+        width: 38px;
+        line-height: 30px;
+        margin-left: 5px; }
+        .go_top .shopping_car_box .buy_list .delet_li a {
+          color: #9b9b9b;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .delet_li a:hover {
+            color: gray6d;
+            text-decoration: none; }
+      .go_top .shopping_car_box .buy_list .list_number {
+        width: 70px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 12px;
+        color: #333333; }
+      .go_top .shopping_car_box .buy_list .list_price {
+        width: 120px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 12px;
+        color: #333333; }
+      .go_top .shopping_car_box .buy_list .buy_list_ts {
+        height: 40px;
+        line-height: 18px;
+        width: 223px;
+        background: white url(/img/list_ts.gif) no-repeat 10px 2px;
+        color: #ea8105;
+        text-align: left;
+        padding-left: 47px; }
+      .go_top .shopping_car_box .buy_list .list_show {
+        width: 223px;
+        height: 275px;
+        border: 1px solid #e6e6e6;
+        border-bottom: none; }
+      .go_top .shopping_car_box .buy_list .list_bom {
+        width: 223px;
+        height: 35px;
+        background-color: #0086cd; }
+        .go_top .shopping_car_box .buy_list .list_bom .list_shop_bom {
+          width: 151px;
+          height: 35px;
+          background: url(/img/little_shop.gif) no-repeat 9px center;
+          line-height: 35px;
+          font-size: 14px;
+          color: white;
+          font-family: "SimSun";
+          padding-left: 35px; }
+        .go_top .shopping_car_box .buy_list .list_bom .into_list_but {
+          width: 60px;
+          height: 35px;
+          background-color: #0086cd;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          font-size: 12px;
+          color: #ffbd2e;
+          font-family: "SimSun";
+          font-weight: bolder; }
+  .go_top .server {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    margin-top: 2px;
+    background: url(/img/server.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none; }
+    .go_top .server .server_list {
+      width: 223px;
+      background-color: white;
+      position: absolute;
+      bottom: -10px;
+      left: -221px;
+      z-index: 1000;
+      border: 1px solid #e6e6e6;
+      padding: 14px; }
+      .go_top .server .server_list .list_li {
+        width: 195px;
+        border-bottom: 1px dashed #bdbdbd;
+        font-size: 12px;
+        padding-bottom: 5px; }
+        .go_top .server .server_list .list_li .server_title {
+          font-family: "SimSun";
+          font-weight: bolder;
+          color: #8e8e8e;
+          line-height: 30px; }
+        .go_top .server .server_list .list_li .server_tel {
+          width: 194px;
+          height: 30px;
+          line-height: 30px;
+          background: url(/img/tel_server_w.gif) no-repeat center left;
+          padding-left: 20px;
+          color: #ea8105; }
+        .go_top .server .server_list .list_li .server_qq_no {
+          width: 73px;
+          height: 25px;
+          line-height: 25px; }
+          .go_top .server .server_list .list_li .server_qq_no a {
+            height: 25px;
+            color: #0086cd;
+            background: url(/img/server_q_no.gif) no-repeat center left;
+            padding-left: 20px;
+            text-decoration: none; }
+            .go_top .server .server_list .list_li .server_qq_no a:hover {
+              text-decoration: underline; }
+        .go_top .server .server_list .list_li .server_qq_yes {
+          width: 73px;
+          height: 25px;
+          line-height: 25px; }
+          .go_top .server .server_list .list_li .server_qq_yes a {
+            height: 25px;
+            color: #0086cd;
+            background: url(/img/server_q_yes.gif) no-repeat center left;
+            padding-left: 20px;
+            text-decoration: none; }
+            .go_top .server .server_list .list_li .server_qq_yes a:hover {
+              text-decoration: underline; }
+        .go_top .server .server_list .list_li .message_name {
+          font-size: 12px;
+          color: #666;
+          line-height: 30px; }
+        .go_top .server .server_list .list_li .time_work {
+          width: 195px;
+          font-size: 12px;
+          color: #666;
+          line-height: 20px;
+          text-align: center; }
+      .go_top .server .server_list .list_li_online {
+        border: none; }
+
+/*------------------------- 弹出窗口结束 -----------------------*/
+/* 关于我们 */
+.about_us {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "SimSun";
+  overflow: hidden;
+  margin-bottom: 100px;
+  /* 快易购简介 */
+  /* 关于我们 右边部分 */ }
+  .about_us .page_logo {
+    width: 187px;
+    height: 47px;
+    background: url(/img/page_logo.gif) no-repeat; }
+  .about_us .page_xuanc {
+    width: 190px;
+    height: 47px;
+    border-left: 1px solid #cccccc;
+    font-size: 16px;
+    line-height: 23px;
+    color: #9b9b9b;
+    font-family: "Microsoft YaHei";
+    padding-left: 10px; }
+  .about_us .us_adv {
+    width: 753px;
+    height: 80px; }
+  .about_us .us_title {
+    width: 1200px;
+    height: 45px;
+    line-height: 45px;
+    background: url(/img/address.gif) no-repeat 10px center;
+    padding-left: 35px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "SimSun";
+    border-bottom: 2px solid #cccccc;
+    color: #909090;
+    text-align: left; }
+    .about_us .us_title a {
+      color: #909090;
+      text-decoration: none; }
+      .about_us .us_title a:hover {
+        color: #0086cd;
+        text-decoration: underline; }
+    .about_us .us_title .title_page {
+      font-size: 22px;
+      color: #333333; }
+  .about_us .left_van {
+    width: 190px;
+    overflow: hidden; }
+    .about_us .left_van .van_li a {
+      width: 190px;
+      padding-left: 30px;
+      height: 28px;
+      line-height: 28px;
+      background-color: #bdbdbd;
+      color: white;
+      display: block; }
+      .about_us .left_van .van_li a:hover {
+        color: #0086cd;
+        text-decoration: none;
+        background: #cccccc url(/img/about_us_van.gif) no-repeat 170px center; }
+      .about_us .left_van .van_li a.on {
+        width: 190px;
+        padding-left: 30px;
+        height: 28px;
+        line-height: 28px;
+        background: #0086cd url(/img/about_us_van_b.gif) no-repeat 170px center;
+        color: white; }
+  .about_us .us_main_box {
+    width: 820px;
+    margin-left: 95px; }
+    .about_us .us_main_box .us_h4 {
+      width: 820px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      color: #ea8105;
+      font-family: "Microsoft YaHei", "SimSun";
+      text-align: center;
+      letter-spacing: 0.2em; }
+    .about_us .us_main_box .content_se {
+      width: 820px;
+      text-indent: 2em;
+      font-size: 14px;
+      font-family: "Microsoft YaHei", "SimSun";
+      line-height: 35px;
+      color: #333333; }
+  .about_us .us_right {
+    width: 840px;
+    margin-left: 95px;
+    /* 浏览器 */ }
+    .about_us .us_right .us_h4 {
+      width: 840px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      color: #ea8105;
+      font-family: "Microsoft YaHei", "SimSun";
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-align: left; }
+    .about_us .us_right .list_show {
+      width: 840px;
+      height: 40px;
+      font-family: "Microsoft YaHei", "SimSun";
+      border-bottom: 1px dashed #dddddd;
+      /* 新闻动态 */ }
+      .about_us .us_right .list_show .list_h5 {
+        font-size: 14px;
+        line-height: 40px;
+        color: #333333;
+        background: url(/img/us_right_arrow.gif) no-repeat left center;
+        padding-left: 15px; }
+        .about_us .us_right .list_show .list_h5 a {
+          color: #333333;
+          text-decoration: none; }
+          .about_us .us_right .list_show .list_h5 a:hover {
+            color: #0086cd;
+            text-decoration: underline; }
+      .about_us .us_right .list_show .list_news {
+        width: 730px;
+        line-height: 40px;
+        overflow: hidden;
+        font-size: 14px; }
+        .about_us .us_right .list_show .list_news a {
+          color: #333333;
+          text-decoration: none; }
+          .about_us .us_right .list_show .list_news a:hover {
+            color: #0086cd;
+            text-decoration: underline; }
+      .about_us .us_right .list_show .time_date {
+        width: 80px;
+        line-height: 40px;
+        font-size: 12px;
+        color: #bdbdbd; }
+    .about_us .us_right .li_show {
+      line-height: 27px;
+      color: #333333; }
+      .about_us .us_right .li_show a {
+        color: #333333;
+        text-decoration: none; }
+        .about_us .us_right .li_show a:hover {
+          color: #0086cd;
+          text-decoration: underline; }
+    .about_us .us_right .ewm_wx_bk {
+      width: 380px;
+      height: 240px;
+      font-family: "Microsoft YaHei", "SimSun";
+      font-size: 14px;
+      color: #333333; }
+      .about_us .us_right .ewm_wx_bk .wx_litter {
+        height: 36px;
+        line-height: 36px;
+        background: url(/img/iphone.gif) no-repeat 15px top;
+        font-weight: bolder;
+        padding-left: 55px; }
+      .about_us .us_right .ewm_wx_bk .bk_litter {
+        height: 36px;
+        line-height: 36px;
+        background: url(/img/computer.gif) no-repeat 5px top;
+        font-weight: bolder;
+        padding-left: 55px; }
+      .about_us .us_right .ewm_wx_bk .wx_info_name {
+        width: 140px;
+        line-height: 30px;
+        text-align: right; }
+      .about_us .us_right .ewm_wx_bk .wx_info {
+        width: 220px;
+        line-height: 30px; }
+        .about_us .us_right .ewm_wx_bk .wx_info a {
+          color: #333333;
+          text-decoration: none; }
+          .about_us .us_right .ewm_wx_bk .wx_info a:hover {
+            color: #0086cd;
+            text-decoration: underline; }
+    .about_us .us_right .ewm_bg {
+      background: url(/img/ewm_bg.gif) no-repeat right top; }
+    .about_us .us_right .list_ie {
+      width: 400px;
+      height: 40px;
+      font-family: "Microsoft YaHei", "SimSun";
+      border-bottom: 1px dashed #dddddd; }
+      .about_us .us_right .list_ie .list_h5 {
+        font-size: 14px;
+        line-height: 40px;
+        color: #333333;
+        padding-left: 5px; }
+      .about_us .us_right .list_ie .download_ie {
+        width: 45px;
+        height: 40px;
+        line-height: 45px;
+        font-size: 12px;
+        overflow: hidden; }
+        .about_us .us_right .list_ie .download_ie a {
+          color: #0086cd;
+          text-decoration: none;
+          background: url(/img/download_logo.gif) no-repeat left center;
+          padding-left: 15px; }
+          .about_us .us_right .list_ie .download_ie a:hover {
+            text-decoration: underline; }
+    .about_us .us_right .ie_qegoo {
+      font-family: "Microsoft YaHei", "SimSun";
+      font-size: 14px;
+      line-height: 40px; }
+
+/* 寻找密码 */
+.regist_box {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #cacaca;
+  overflow: hidden;
+  background-color: white; }
+  .regist_box .regist_title {
+    width: 1100px;
+    height: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #cacaca;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #666;
+    font-weight: bolder;
+    line-height: 37px;
+    font-family: "Microsoft YaHei", "SimSun";
+    letter-spacing: 0.1em; }
+  .regist_box .regist_table {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .regist_box .regist_table .regist_td {
+      height: 38px;
+      line-height: 38px;
+      font-size: 15px;
+      font-family: "SimSun";
+      color: #909090;
+      letter-spacing: 0.05em;
+      margin-right: 5px; }
+      .regist_box .regist_table .regist_td span {
+        color: #ea8105; }
+    .regist_box .regist_table .regist_input_box {
+      width: 280px;
+      height: 36px;
+      font-size: 14px;
+      color: #333333;
+      overflow: hidden;
+      line-height: 36px;
+      border: 1px solid #cacaca;
+      padding-left: 5px;
+      outline: none;
+      font-family: "SimSun"; }
+    .regist_box .regist_table.pass_diffi {
+      width: 195px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 13px;
+      font-family: "SimSun";
+      color: #909090;
+      margin-left: 90px; }
+      .regist_box .regist_table.pass_diffi .diffi_pic {
+        width: 130px;
+        height: 15px;
+        margin-top: 5px; }
+        .regist_box .regist_table.pass_diffi .diffi_pic img {
+          width: 41px;
+          height: 15px;
+          float: left;
+          margin-left: 2px; }
+    .regist_box .regist_table .regist_td_ts {
+      height: 38px;
+      line-height: 38px;
+      font-size: 12px;
+      font-family: "SimSun";
+      color: #333333;
+      padding-left: 15px; }
+  .regist_box .read_condition {
+    width: 280px;
+    line-height: 20px;
+    margin-top: 7px;
+    font-size: 12px; }
+    .regist_box .read_condition .checkbox_mid {
+      vertical-align: middle; }
+  .regist_box .regist_but {
+    width: 280px;
+    height: 36px;
+    background-color: #0086cd;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .regist_box .forget_bz {
+    width: 655px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto; }
+  .regist_box .password_pic {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #bdbdbd; }
+  .regist_box .password_pic_see {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: "SimSun";
+    color: #333333;
+    padding-left: 15px; }
+  .regist_box .next_regist_t {
+    width: 280px;
+    height: 36px;
+    background-color: #0086cd;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .regist_box .regist_succ_box {
+    width: 527px;
+    overflow: hidden;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto; }
+    .regist_box .regist_succ_box .ggcc_pic {
+      width: 71px;
+      height: 84px; }
+    .regist_box .regist_succ_box .sucd_w {
+      width: 420px;
+      overflow: hidden;
+      font-family: "Microsoft YaHei";
+      margin-bottom: 90px; }
+
+/* 首页 */
+.q_logo {
+  width: 401px;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/img/logo_big.gif); }
+
+.q_introduce_web {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  letter-spacing: 0.22em;
+  text-align: center; }
+
+.q_search_box {
+  width: 700px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  .q_search_box .input_box {
+    width: 545px;
+    * width: 520px;
+    height: 50px;
+    * height: 42px;
+    line-height: 30px;
+    * line-height: 42px;
+    border: 3px solid #0093db;
+    border-right: none;
+    background: url(/img/search_big_z.jpg) no-repeat 10px center;
+    padding-left: 37px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei"; }
+  .q_search_box .input_button {
+    width: 107px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0086cd;
+    color: #fff;
+    font-size: 21px;
+    font-family: "Microsoft YaHei","SimSun";
+    letter-spacing: 0.2em;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+
+.q_introduce_detail {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Microsoft YaHei";
+  letter-spacing: 0.08em;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*搜索结果页*/
+/* 1200广告 */
+.ad_1200 {
+  width: 1200px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* 搜索条件及结果显示 */
+/*----------------------------------内页搜索框-----------------------------------*/
+.search_result {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../img/page_top_dw.gif) no-repeat right -25px;
+  font-family: "SimSun";
+  min-height: 520px;
+  /*------------------------------------搜索结果页面---------------------------------*/
+  /*---------------------------------------------------- 商家显示结果页面 ------------------------------------------------------*/ }
+  .search_result .page_logo {
+    width: 187px;
+    height: 47px;
+    background: url(../img/page_logo.gif) no-repeat; }
+  .search_result .page_detail {
+    width: 190px;
+    height: 47px;
+    border-left: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 23px;
+    color: #9b9b9b;
+    font-family: "Microsoft YaHei";
+    padding-left: 10px; }
+  .search_result .page_search_box {
+    width: 455px; }
+    .search_result .page_search_box .page_input_box {
+      width: 357px;
+      * width: 350px;
+      height: 38px;
+      * height: 32px;
+      line-height: 27px;
+      border: 2px solid #0086cd;
+      border-right: none;
+      background: white url(../img/search_big_z.gif) no-repeat 10px center;
+      padding-left: 35px;
+      outline: none;
+      color: #9b9b9b;
+      font-size: 14px; }
+    .search_result .page_search_box .page_input_button {
+      width: 62px;
+      height: 38px;
+      line-height: 35px;
+      background-color: #0086cd;
+      color: #fff;
+      font-size: 15px;
+      font-family: "Microsoft YaHei","SimSun";
+      letter-spacing: 0.2em;
+      border: none;
+      outline: none;
+      cursor: pointer; }
+  .search_result .guidepost {
+    width: 1200px;
+    *width: 1170px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333333;
+    background: url(../img/page_resout.gif) no-repeat 10px center;
+    padding-left: 30px;
+    font-family: "Microsoft YaHei","SimSun";
+    border-bottom: 2px solid #0086cd; }
+    .search_result .guidepost .page_address {
+      width: 670px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden; }
+    .search_result .guidepost .delivery_price {
+      width: 360px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      background: url(../img/horn.gif) no-repeat left center;
+      padding-left: 27px; }
+    .search_result .guidepost .model_button {
+      width: 105px;
+      height: 26px;
+      line-height: 26px;
+      background-color: #22b23d;
+      color: white;
+      border: none;
+      outline: none;
+      margin-bottom: 2px; }
+  .search_result .business_relevance_model {
+    width: 1200px;
+    height: 38px;
+    overflow: hidden;
+    font-size: 12px;
+    border-bottom: 1px solid #6cbde8; }
+    .search_result .business_relevance_model .business_relevance_title {
+      width: 80px;
+      height: 38px;
+      line-height: 38px;
+      color: #333333;
+      font-weight: bolder;
+      text-align: right;
+      overflow: hidden; }
+    .search_result .business_relevance_model .business_one_row {
+      width: 1120px;
+      * width: 1100px; }
+      .search_result .business_relevance_model .business_one_row .business_row_li {
+        height: 38px;
+        line-height: 38px;
+        margin-right: 16px;
+        margin-left: 15px;
+        font-family: Arial;
+        overflow: hidden; }
+  .search_result .business_product_imfor {
+    width: 1200px;
+    height: 80px; }
+    .search_result .business_product_imfor .product_pic {
+      width: 70px;
+      height: 70px; }
+    .search_result .business_product_imfor .product_name {
+      line-height: 20px;
+      width: 300px;
+      height: 20px;
+      overflow: hidden;
+      font-family: "Arial"; }
+      .search_result .business_product_imfor .product_name a {
+        color: #0086cd;
+        text-decoration: underline; }
+        .search_result .business_product_imfor .product_name a:hover {
+          text-decoration: none; }
+    .search_result .business_product_imfor .buy_number {
+      width: 120px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px; }
+      .search_result .business_product_imfor .buy_number .number {
+        width: 40px; }
+      .search_result .business_product_imfor .buy_number .number_box {
+        width: 52px;
+        height: 25px;
+        * height: 23px;
+        border: 1px solid #bdbdbd;
+        padding-left: 3px;
+        outline: none; }
+      .search_result .business_product_imfor .buy_number .number_add_reduction {
+        width: 13px;
+        height: 25px; }
+        .search_result .business_product_imfor .buy_number .number_add_reduction .add_number {
+          width: 13px;
+          height: 12px;
+          background: url(../img/add_sum.gif) no-repeat;
+          border: none;
+          outline: none; }
+        .search_result .business_product_imfor .buy_number .number_add_reduction .reduction_number {
+          width: 13px;
+          height: 12px;
+          background: url(../img/reduction_sum.gif) no-repeat;
+          border: none;
+          outline: none;
+          margin-top: 1px; }
+    .search_result .business_product_imfor .product_description {
+      width: 850px;
+      height: 30px;
+      line-height: 30px;
+      color: #333333;
+      font-size: 12px;
+      overflow: hidden;
+      font-family: "Microsoft YaHei" 、 "SimSun"; }
+    .search_result .business_product_imfor .data_sheet a {
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      background: url(../img/data_sheet_dw.gif) no-repeat left center;
+      font-size: 12px;
+      font-family: "SimSun";
+      padding-left: 25px;
+      display: block; }
+      .search_result .business_product_imfor .data_sheet a:hover {
+        color: #0086cd;
+        text-decoration: underline; }
+  .search_result .business_product_table {
+    width: 1200px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    z-index: -999;
+    font-size: 12px; }
+    .search_result .business_product_table th {
+      height: 28px;
+      line-height: 28px;
+      font-weight: bolder;
+      color: #0a547c;
+      text-align: center; }
+    .search_result .business_product_table .number {
+      width: 70px;
+      height: 30px;
+      overflow: hidden;
+      text-align: right; }
+    .search_result .business_product_table .price {
+      width: 70px;
+      height: 30px;
+      overflow: hidden;
+      text-align: left; }
+    .search_result .business_product_table .more_price {
+      width: 65px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: auto;
+      margin-right: auto; }
+    .search_result .business_product_table .operation a {
+      width: 60px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #333; }
+      .search_result .business_product_table .operation a:hover {
+        color: #0086cd;
+        text-decoration: underline; }
+    .search_result .business_product_table td { 
+      /* border-top: 1px solid #e0e0e0; */
+      height: 30px;
+      color: #333333;
+      line-height: 30px;
+      font-family: "Arial"; }
+    .search_result .business_product_table .td_dw_eb {
+      background-color: #ebebeb; }
+     /*------让制造商和供应商只显示一行------*/ 
+    .search_result .business_product_table .manufacturer_width {
+        width: 230px;
+        height: 30px;
+        overflow: hidden; }
+    .search_result .business_product_table .supplier_width {
+        width: 110px;
+        height: 30px;
+        overflow: hidden; }
+        /*-------*/
+    .search_result .business_product_table .border_right {
+      border-right: 1px solid #e0e0e0; }
+    .search_result .business_product_table .no_border {
+      border-bottom: none; }
+    .search_result .business_product_table .no_padding {
+      padding-top: 0px;
+      padding-bottom: 0px; }
+    .search_result .business_product_table .table_leftbutton {
+      width: 20px;
+      height: 20px;
+      background: url(../img/table_left.gif) no-repeat center;
+      border: none;
+      outline: none; }
+    .search_result .business_product_table .table_rightbutton {
+      width: 20px;
+      height: 20px;
+      background: url(../img/table_right.gif) no-repeat center;
+      border: none;
+      outline: none; }
+    .search_result .business_product_table .table_fontnormal {
+      font-weight: normal; }
+  .search_result .models_recom {
+    width: 1200px;
+    overflow: hidden;
+    border-bottom: 1px solid #cacaca;
+    color: #333333; }
+    .search_result .models_recom .title3 {
+      width: 1200px;
+      height: 30px;
+      border-bottom: 2px solid #cacaca; }
+      .search_result .models_recom .title3 .title_name {
+        width: 100px;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: bolder;
+        padding-left: 10px; }
+      .search_result .models_recom .title3 .letter_box {
+        margin-left: 100px;
+        line-height: 20px;
+        margin-top: 10px;
+        font-family: Arial; }
+        .search_result .models_recom .title3 .letter_box .letter_show a {
+          width: 15px;
+          height: 15px;
+          line-height: 15px;
+          text-align: center;
+          font-size: 12px;
+          color: #8e8e8e;
+          text-decoration: none;
+          display: block; }
+          .search_result .models_recom .title3 .letter_box .letter_show a:hover {
+            color: #0086cd;
+            text-decoration: underline; }
+          .search_result .models_recom .title3 .letter_box .letter_show a.on {
+            background-color: #0086cd;
+            color: #fff; }
+    .search_result .models_recom .model_box {
+      width: 1200px;
+      height: 55px;
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .search_result .models_recom .model_box .model_list {
+        line-height: 30px;
+        font-size: 12px;
+        font-family: Arial;
+        margin-left: 15px; }
+        .search_result .models_recom .model_box .model_list a {
+          width: 170px;
+          height: 30px;
+          color: #333333;
+          padding-left: 5px;
+          text-decoration: none;
+          display: block;
+          overflow: hidden; }
+          .search_result .models_recom .model_box .model_list a:hover {
+            background-color: #0086cd;
+            color: #fff; }
+
+/* --------------------- 搜索失败 ------------------ */
+.search_img {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/img/search_img.gif) no-repeat;
+  margin-top: 75px; }
+
+.search_fail {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Microsoft YaHei","SimSun";
+  background: url(/img/chat_exclam.gif) no-repeat left top;
+  padding-left: 150px;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+  margin-top: 30px; }
+  .search_fail .fail_imfor {
+    width: 120px;
+    height: 30px;
+    line-height: 27px;
+    background-color: #0086cd;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    letter-spacing: 0.2em;
+    outline: none;
+    text-align: center;
+    margin-top: 20px; }
+  .search_fail .mail_input {
+    width: 240px;
+    height: 26px;
+    border: 1px solid #a9a9a9;
+    line-height: 26px;
+    color: #8e8e8e;
+    font-size: 12px;
+    outline: none;
+    padding-left: 3px; }
+  .search_fail .send_out {
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #fff;
+    outline: none;
+    font-family: "SimSun";
+    margin-left: 10px; }
+    .search_fail .send_out a {
+      width: 74px;
+      height: 26px;
+      line-height: 24px;
+      border: 1px solid #8e8e8e;
+      color: #8e8e8e;
+      text-decoration: none;
+      display: block; }
+      .search_fail .send_out a:hover {
+        border: 1px solid #000;
+        text-decoration: none; }
+
+/* ------------------------系统维护------------------------ */
+.maintain_page {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .maintain_page .page_log {
+    width: 288px;
+    height: 66px;
+    background: url(/img/maint_logo.gif) no-repeat; }
+  .maintain_page .page_detail {
+    height: 66px;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+    line-height: 33px;
+    font-size: 18px;
+    color: #ccc;
+    font-family: "Microsoft YaHei","SimSun"; }
+  .maintain_page .maintain_imfor {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto; }
+    .maintain_page .maintain_imfor .imfor_con {
+      line-height: 40px;
+      font-size: 22px;
+      font-family: "Microsoft YaHei","SimSun";
+      color: #0086cd; }
+    .maintain_page .maintain_imfor .back_button {
+      width: 75px;
+      height: 33px;
+      background-color: #0086cd;
+      color: #fff;
+      font-weight: bolder;
+      text-align: center;
+      border: none;
+      outline: none; }
+    .maintain_page .maintain_imfor .refresh_button {
+      width: 110px;
+      height: 33px;
+      background-color: #0086cd;
+      color: #fff;
+      font-weight: bolder;
+      text-align: center;
+      border: none;
+      outline: none; }
+      
+      
+      /*搜索结果页 买家服务阶梯价*/
+.inquiry_box {
+  width: 240px;
+  padding: 7px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  z-index: 0;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px;
+  overflow: hidden; }
+  .inquiry_box .cost_buy {
+    width: 230px;
+    height: 25px;
+    color: #ea8105;
+    line-height: 25px;
+    background: url(/img/prompt_wind.gif) no-repeat 20px center; }
+  .inquiry_box .buy_list_qqline {
+    width: 235px;
+    color: #333333; }
+    .inquiry_box .buy_list_qqline .qq_take {
+      width: 82px;
+      height: 28px;
+      border: none;
+      outline: none; }
+    .inquiry_box .buy_list_qqline .tel_link_buy {
+      width: 125px;
+      font-size: 12px;
+      height: 28px;
+      line-height: 35px;
+      text-align: left; }
+  .inquiry_box .num_input {
+    width: 70px;
+    height: 24px;
+    _height: 20px;
+    outline: none;
+    padding-left: 3px;
+    border: 1px solid #cccccc; }
+  .inquiry_box .numb_up_down {
+    width: 13px;
+    height: 22px; }
+    .inquiry_box .numb_up_down .number_up {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_up.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      border: none; }
+    .inquiry_box .numb_up_down .number_down {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_down.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      margin-top: 2px;
+      border: none; }
+  .inquiry_box .inquiry_sure_butt {
+    width: 52px;
+    height: 23px;
+    background: url(/img/inquiry_sure.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    border: none; }
+
+.inquiry_box2 {
+  width: 135px; }
+.inquiry_name {
+  width: 50px;
+  line-height: 25px; }
+.inquiry_price_box {
+  width: 150px; }
+  .inquiry_price_box .inquiry_price {
+    width: 145px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e6e6e6; }
+    .inquiry_price_box .inquiry_price .number2 {
+      width: 50px;
+      text-align: left;
+      font-weight: bolder;
+      color: #6d6d6d; }
+    .inquiry_price_box .inquiry_price .price2 {
+      text-align: left;
+      color: #333333; }
+      
+    /*-----------------------------datesheet拒绝访问页面-----------------------------*/ }
+    .maintain_page .maintain_imfor .imfor_con {
+      line-height: 40px;
+      font-size: 22px;
+      font-family: "Microsoft YaHei","SimSun";
+      color: #0086cd; }
+    .maintain_page .maintain_imfor .back_button {
+      width: 75px;
+      height: 33px;
+      background-color: #0086cd;
+      color: #fff;
+      font-weight: bolder;
+      text-align: center;
+      border: none;
+      outline: none; }
+    .maintain_page .maintain_imfor .refresh_button {
+      width: 110px;
+      height: 33px;
+      background-color: #0086cd;
+      color: #fff;
+      font-weight: bolder;
+      text-align: center;
+      border: none;
+      outline: none; }
+    .maintain_page .maintain_imfor .net_imfor {
+      font-family: "Microsoft YaHei","SimSun";
+      font-size: 30px;
+      color: #0086cd;
+      line-height: 50px;
+      letter-spacing: 0.05em; }
+    .maintain_page .maintain_imfor .tel_mail_box {
+      width: 520px;
+      line-height: 35px;
+      color: #ea8105;
+      font-size: 18px; }
+      .maintain_page .maintain_imfor .tel_mail_box .tel_box {
+        width: 240px;
+        height: 35px;
+        border-right: 1px dashed #f7c07e;
+        background: url(../img/datesheet_tel.gif) no-repeat left center;
+        padding-left: 35px;
+        font-family: "Arial";
+        letter-spacing: 0.1em; }
+      .maintain_page .maintain_imfor .tel_mail_box .mail_box {
+        width: 170px;
+        height: 35px;
+        background: url(../img/datesheet_mail.gif) no-repeat 50px center;
+        padding-left: 85px;
+        font-family: "Arial";
+        letter-spacing: 0.1em; }
+    .maintain_page .maintain_imfor .contact_manage {
+      line-height: 45px;
+      font-size: 20px;
+      color: #0086cd;
+      font-family: "Microsoft YaHei","SimSun";
+      letter-spacing: 0.2em; }
+      
+      /*-------------------------------- 供应商搜索窗口管网参考价弹出窗口 ---------------------------------------*/
+.open_window {
+  position: relative; }
+
+.more_price {
+  width: 500px;
+  position: absolute;
+  z-index: 200;
+  top: 15px;
+  * left: 0px; }
+  .more_price .price_box {
+    width: 150px;
+    display: inline-block;
+    margin-top: 13px;
+    border: 1px solid #b1b1b1;
+    position: relative;
+    z-index: 9990;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    -moz-box-shadow: 2px 3px 0px #c8c8c8;
+    -webkit-box-shadow: 2px 3px 0px #c8c8c8;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#c8c8c8')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#c8c8c8'); }
+    .more_price .price_box .price_arrow {
+      width: 13px;
+      height: 8px;
+      background: url(/img/price_arrow.gif) no-repeat;
+      position: absolute;
+      z-index: 9990;
+      top: -8px;
+      left: 65px; }
+  .more_price .window_number {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: right; }
+  .more_price .window_price {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: left; }
+

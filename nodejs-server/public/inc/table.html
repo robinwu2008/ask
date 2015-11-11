@@ -1,0 +1,32 @@
+<table class="table table-striped table-hover table-bordered"   ng-controller="customersController">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr  ng-repeat="x in names">
+			<td>{{x.name}}</td>
+			<td>{{x.message}}</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-info">Action</button>
+					<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Bootstrap</a>
+						</li>
+						<li><a href="#">Font Awesome</a>
+						</li>
+						<li><a href="#">jQuery</a>
+						</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

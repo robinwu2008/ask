@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*登录界面样式*/ 
+.loginbox{width:815px; margin:5px auto;}
+.login_top{width:815px; height:8px; background:url(../images/login_line1.gif) top no-repeat; overflow:hidden;}
+.login_mid{ overflow:hidden; border:1px solid #e6e6e6; padding-bottom:15px;   display:block;}
+.login_bottom{width:815px; height:7px; overflow:hidden; background:url(../images/login_line2.gif) top no-repeat;}
+.login_main{color:#333; display:block;}
+.login_main1{width:558px; float:left; border-right:1px solid #ccc;height: 281px;}
+.login_main1 .loginf{
+	padding-left: 25px;
+	width: 100%;
+	height:265px;
+}
+.login_main11{width:768px; float:left;}
+
+.login_main1 .other-login {
+	width: 100%;
+	height:36px;
+	float: left;
+	padding-left:25px;
+	line-height:35px;
+	background:url(../images/dw2.jpg) no-repeat
+}
+
+.login_main1 .other-login a {
+	background: url(../images/Connect_qq.png) no-repeat;
+	background-position: left;
+	display: block;
+	height: 35px;
+	float: left;
+	padding: 0px 30px 0px 20px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+}
+
+.login_main1 .other-login a:HOVER {
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+}
+.login_main1 .content{ font-size:14px; line-height:30px; float:left;}
+.login_main1 .content img{float:left; margin:10px;}
+.login_main1 .content2{width:380px; font-size:14px; line-height:30px; float:left; margin:10px auto 10px 78px;}
+.login_main1 .content2 a{color:red; text-decoration:underline;}
+.login_main1 .content2 a:hover{color:red; text-decoration:underline;}
+
+.blue{color:#004e99;}
+.blue2{color:#004e99; font-weight:bold;}
+.login_main1 .content3{width:380px; font-size:13px; line-height:30px; float:left; margin:10px auto 10px 78px;color:#004e99;}
+
+
+.login_main .top{  height:60px; float:left; line-height:60px; font-weight:bold; font-size:14px; margin:auto;}
+.login_main .top1{width:36px; float:left; height:44px; background:url(../images/login_button.gif) no-repeat 2px 16px; margin-right:10px;}
+
+.login_main .box{width:448px; float:left; height:auto; margin:10px 5px;}
+.login_main .box a{color:#004e99;}
+.login_main .box span{ width:160px; height:18px; display:block; float:left; padding-left:5px;}
+.login_main .box img{float:left; margin-left:10px;}
+
+.login_main .box a:hover{color:red;}
+.login_main .box2{width:382px; float:left; height:auto; margin:5px;color:#666; padding-left:48px;}
+.login_main .box2 a{color:#666;}
+.login_main .box2 a:hover{color:red;}
+.login_main .box .font {color:#666; text-decoration:none;}
+
+.textboxing{width:750px; line-height:24px; margin-bottom:6px; float:left; clear:both; padding-left:15px; background:#f4f4f4; padding-top:8px;}
+
+.textboxing1{width:88px;  line-height:22px; float:left; text-align:right; display:block;}
+.textboxing2{width:225px; line-height:20px; line-height:20px; float:left; display:block; margin-bottom:6px;}
+.textboxing3{width:430px; color:#666; line-height:28px; float:left; display:block;}
+.mmqd-box{width: 200px; height:25px; line-height:25px; float:left;}
+.mmqd-box1{width:65px; height:25px; float:left;}
+#mmqd-box2{width:120px; height:22px; line-height:22px; float:left;}
+#mmqd-box2 .one{width:40px; height:22px; color:#fff; text-align:center; float:left; background:#ccc;}
+#mmqd-box2 .three{width:40px; height:22px; color:#fff; text-align:center; float:left; background:#004a99;}
+.mmqd-box3{width:85px; height:25px; float:left; margin-left:10px;}
+
+.login_box{border:1px solid #ccc;  line-height:22px; color:#666; width:200px;}
+.login_box2{border:1px solid #ccc; height:20px; line-height:20px; color:#666;}
+.login_button{ border:none; background:url(../images/login_button.gif) no-repeat -42px 0px; width:61px; height:23px; font-weight:bold; color:#fff; cursor:hand;}
+.login_button2{ border:none; background:url(../images/user-name.gif) no-repeat 0 0px; width:124px; height:30px; color:#fff; cursor:hand;}
+.login_button3{ border:none; background:url(../images/user-name.gif) no-repeat 0 0px; width:124px; height:26px; line-height:20px; color:#fff; cursor:hand; font-weight:bold; font-size:13px;}
+
+
+.login_main2{width:300px; margin:20px auto; float:right;}
+.login_main22{width:250px; margin:20px auto; text-align:center; float:right;}
+.login_main2 .content{width:300px; margin-bottom:15px; line-height:22px;}
+.login_main2_button{background:url(../images/login_button.gif) no-repeat 0px -35px; width:104px; height:23px; border:none;cursor:hand;}
+
+.gray{color:#666;}
+.usrname_font{font-size:12px; width:auto; color:#666;}
+.orange{color:#ee722f;}
+
+
+.usrname{width:680px; height:auto; display:block; margin:auto; clear:both;}
+.usrname1{width:680px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) no-repeat 110px -32px;}
+.usrname1 .one{width:168px; height:36px; display:block; margin-left:110px; _margin-left:55px; text-align:center; font-size:14px; color:#fff; font-weight:bold; float:left;}
+.usrname1 .two{width:168px; height:36px; display:block; margin-left:34px; text-align:center; font-size:14px; color:#fff; font-weight:bold; float:left;}
+
+.usrname2{width:650px; line-height:24px; display:block; font-size:14px; margin:15px;}
+.usrname3{width:650px; line-height:24px; display:block; font-size:14px; margin:45px 15px; text-align:center; clear:both;}
+.usrname4{width:450px; line-height:24px; display:block; font-size:14px; margin:45px auto 65px auto; height:40px;}
+.usrname4 a{color:red; text-decoration:underline;}
+
+
+.usrname11{width:680px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) no-repeat 110px -69px;color:#fff;}
+.usrname11 .one{width:168px; height:36px; display:block; margin-left:110px; text-align:center; font-size:14px; font-weight:bold;color:#fff;  float:left;}
+.usrname11 .two{width:168px; height:36px; display:block; margin-left:34px; text-align:center; font-size:14px; color:#fff; font-weight:bold; float:left;}
+
+.passwords{width:770px; display:block; margin:auto; text-align:center; float:left;}
+.password{width:770px; height:36px; line-height:36px; display:block; text-align:center;}
+.password1{width:168px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 169px 37px;float:left;color:#fff;}
+.password2{width:34px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 203px 35px;float:left;}
+.password3{width:166px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 0px 37px;float:left;}
+
+
+.passwordds{width:700px; display:block; margin:15px auto auto; text-align:center; float:left;}
+.passwordd{width:630px; margin-left:70px; height:36px; line-height:36px; display:block; text-align:center;font-size:14px; font-weight:bold; color:#fff;}
+.passwordd1{width:168px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 168px 37px;float:left;color:#fff;}
+.passwordd2{width:34px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 202px 35px;float:left;}
+.passwordd3{width:168px; height:36px; line-height:36px; display:block; background:url(../images/user-name.gif) 0px 36px;float:left;}
+
+.passwords .main{width:770px; display:block; margin:20px auto; text-align:center; font-size:14px; line-height:30px;}
+
+.password{color:#fff; font-size:14px; font-weight:bold;}
+

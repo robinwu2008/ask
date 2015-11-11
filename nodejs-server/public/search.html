@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" ng-app="myapp" ng-init="show=1">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>实时查询</title>
+		<script type="text/javascript" src="js/in.js" autoload="true" core="js/jquery.min.1.10.2.js"></script>
+		<script type="text/javascript">
+			In.ready('bootstrapjs3', 'bootstrapcss3', 'angular', 'templatemo_main',
+				'templatemo_script', 'jquery', 'bootstrap-jquery-ui-css-1.9.2',
+				'jquery-highlighter', function() {
+					var app = angular.module('myapp', []);
+					app.controller('mainController', mainController);
+
+					function mainController($scope, $http) {
+
+						$scope.showwho = function(data) {
+							changeshow(data, $scope, $http);
+						};
+
+						function changeshow(n, $scope, $http) {
+							if (n >= 4 || n < 1) {
+								n = 1;
+							}
+							$scope.show = n;
+						}
+					}
+					app.controller('comController', comController);
+
+					function comController($scope, $http) {
+						key = $scope.key1;
+						$scope.search = function(data) {
+							findqiyebykey(data, $scope, $http);
+						};
+					}
+
+					function findqiye($scope, $http) {
+						findqiyebykey("深圳", $scope, $http);
+					}
+
+					function findqiyebykey(key1, $scope, $http) {
+						$http.get('/qiye?name=' + key1).success(function(data) {
+							$scope.qiye = data;
+						});
+					}
+
+					app.controller('pnController', pnController);
+
+					function pnController($scope, $http) {
+						$scope.runme = function() {
+							$scope.digikey = [];
+							$scope.mouser = [];
+							$scope.element = [];
+							$scope.digikeylength = 0;
+							$scope.mouserlength = 0;
+							$scope.elementlength = 0;
+							$http.get('/searchdigikey?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+								$scope.digikey = data;
+								$scope.digikeylength = data.length;
+							});
+							$http.get('/searchmouser?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+								$scope.mouser = data;
+								$scope.mouserlength = data.length;
+							});
+							$http.get('/searchelement?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+								$scope.element = data;
+								$scope.elementlength = data.length;
+							});
+						}
+					}
+					app.controller('bomController', bomController);
+
+					function bomController($scope, $http) {
+						console.log("--------");
+					}
+				});
+		</script>
+
+	</head>
+
+	<body ng-controller='mainController'>
+		<div style="height: 50px;">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						</button>
+						<a class="navbar-brand" href="#">-------</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="templatemo-content-wrapper">
+			<div ng-include="'inc/left.html'"></div>
+			<div ng-controller='pnController' style="width: 85%;float: right;" ng-include="'inc/pnsearch.html'" ng-show="show==1"></div>
+			<div ng-controller='comController' style="width: 85%;float: right;" ng-include="'inc/comsearch.html'" ng-show="show==2"></div>
+			<div ng-controller='bomController' style="width: 85%;float: right;" ng-include="'inc/bom.html'" ng-show="show==3"></div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,209 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" ng-app="phonecatApp" ng-init="searcwords='MAX2321'">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>实时查询</title>
+		<script type="text/javascript" src="js/in.js" autoload="true" core="js/jquery.min.1.10.2.js"></script>
+		<script type="text/javascript">
+			In.ready('bootstrapjs3', 'bootstrapcss3', 'angular', 'templatemo_main', 'templatemo_script', 'jquery', 'autoComplete', 'jquery-ui', 'bootstrap-jquery-ui-css-1.9.2', 'jquery-highlighter', function() {
+				var phonecatApp = angular.module('phonecatApp', []);
+				/////////////////////////////////  
+				phonecatApp.controller('PhoneListCtrl', function($scope, $http) {
+					$http.get('/searchdigikey?name=mamamaamamamamama').success(function(data) {
+						$scope.digikey = data;
+						//console.log(data + "33333");
+					});
+					$http.get('/searchmouser?name=mamamaamamamamama').success(function(data) {
+						$scope.mouser = data;
+						//console.log(data + "444444");
+					});
+					$http.get('/searchelement?name=mamamaamamamamama').success(function(data) {
+						$scope.element = data;
+						//console.log(data + "444444");
+					});
+					$scope.runme = function() {
+						$scope.digikey = [];
+						$scope.mouser = [];
+						$scope.element = [];
+						$scope.digikeylength = 0;
+						$scope.mouserlength = 0;
+						$scope.elementlength = 0;
+						$http.get('/searchdigikey?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+							$scope.digikey = data;
+							$scope.digikeylength = data.length;
+							//console.log(data + "111111111111");
+						});
+						$http.get('/searchmouser?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+							$scope.mouser = data;
+							$scope.mouserlength = data.length;
+							//console.log(data + "222222222222");
+						});
+						$http.get('/searchelement?name=' + $(".pnkey").val().toLocaleUpperCase()).success(function(data) {
+							$scope.element = data;
+							$scope.elementlength = data.length;
+							//console.log(data + "222222222222");
+						});
+
+					}
+				});
+			});
+			 //////////////////////////
+			function h() {
+				$("body").highlight($(".pnkey").val());
+				$(".highlight").css("color", "#ea8105");
+			}
+			setInterval("h()", 1000)
+		</script>
+		<style>
+			tr{
+			  font-size: 14px 
+			}
+		</style>
+	</head>
+
+	<body ng-controller="PhoneListCtrl">
+		<div style="height: 50px;">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+						</button>
+						<a class="navbar-brand" href="#">ic360</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<form class="navbar-form navbar-right" role="form" style="margin-right: 20px;">
+							<div class="form-group">
+								<input type="text" placeholder="Email" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="password" placeholder="Password" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-success">Sign in</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="templatemo-content-wrapper">
+			<div class="navbar-collapse collapse templatemo-sidebar" style="width: 15%;">
+				<ul class="templatemo-sidebar-menu" style="text-align: center;">
+					<li role="presentation" class="active"><a href="checkPnImfor.html" role="tab" data-toggle="tab">实时查询</a>
+					</li>
+					<li role="presentation"><a href="#storefirst" role="tab" data-toggle="tab">comeimg soon</a>
+					</li>
+					<li role="presentation"><a href="#" role="tab" data-toggle="tab">comeimg soon</a>
+					</li>
+				</ul>
+			</div>
+			<div class="templatemo-content-wrapper" style="width: 85%;float: right;">
+				<div id="navbar" class="navbar-collapse collapse " style="background-color: white;">
+					<form class="navbar-form navbar-right" role="form">
+						<div class="col-lg-6" style="margin-left: 200px;">
+							<div class="input-group">
+								<input type="text" class="form-control  pnkey" qegooautoComplete="auto" dataUrl="/search?name=">
+								<span class="input-group-btn">
+        							<button class="btn btn-default" type="button" ng-click="runme()">Go!</button>
+      								</span>
+							</div>
+							<!-- /input-group -->
+						</div>
+					</form>
+				</div>
+				<div role="tabpanel" class="tab-pane active" id="storedate" style="margin-right: 15px;min-height: 580px;background-color: white;padding-left: 20px;">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#digikey" role="tab" data-toggle="tab">Digikey  <span class="badge"  ng-bind="digikeylength"></span></a>
+						</li>
+						<li role="presentation"><a href="#mouser" role="tab" data-toggle="tab">mouser  <span class="badge" ng-bind="mouserlength"></span></a>
+						</li>
+						<li role="presentation"><a href="#element" role="tab" data-toggle="tab">element  <span class="badge" ng-bind="elementlength"></span></a>
+						</li>
+						<li role="presentation"><a href="#chip1stop" role="tab" data-toggle="tab">chip1stop  <span class="badge"></span></a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="digikey">
+							<div class="table-responsive">
+								<table class="table table-condensed table-bordered    ">
+									<thead>
+										<tr class="active">
+											<th>料号 pn</th>
+											<th>库存</th>
+											<th>价格</th>
+											<th>链接</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="one in digikey  ">
+											<td>{{one.pn| uppercase}}</td>
+											<td>{{one.kucun}}</td>
+											<td>{{one.jiage}}</td>
+											<td><a href="{{one.url}}" target="_blank">去管网</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="mouser">
+							<div class="table-responsive">
+								<table class="table table-condensed table-bordered  ">
+									<thead>
+										<tr class="active">
+											<th>料号 pn</th>
+											<th>库存</th>
+											<th>价格</th>
+											<th>链接</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="one in mouser   ">
+											<td>{{one.pn| uppercase}}</td>
+											<td>{{one.kucun}}</td>
+											<td>{{one.jiage}}</td>
+											<td><a href="{{one.url}}" target="_blank">去管网</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="element">
+							<div class="table-responsive">
+								<table class="table table-condensed table-bordered  ">
+									<thead>
+										<tr class="active">
+											<th>料号 pn</th>
+											<th>库存</th>
+											<th>价格</th>
+											<th>链接</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="one in element   ">
+											<td>{{one.pn| uppercase}}</td>
+											<td>{{one.kucun}}</td>
+											<td>{{one.jiage}}</td>
+											<td><a href="{{one.url}}" target="_blank">去管网</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="chip1stop">
+							<div class="table-responsive">
+								<div ng-include="'bom.html'"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane active" id="actualdata">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
