@@ -28,6 +28,7 @@
 		<table class="table" >
 			<tr>
 				<td>料号</td>
+				<td>制造商</td>
 				<td>数量</td>
 				<td>交期</td>
 				<td>备注</td>
@@ -38,6 +39,12 @@
 				<td>
 				 <input type="text" ng-model="product.pn" />
 				 </td>
+				 <td>
+				 <select name="mySelect" id="mySelect"
+                    ng-options="option.name for option in data.availableOptions track by option.id"
+                     ng-model="data.selectedOption"></select>
+				
+				</td>
 				<td>
 				  <input type="text" ng-model="product.quantity" />
 				</td>
