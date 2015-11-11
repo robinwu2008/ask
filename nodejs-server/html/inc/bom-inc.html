@@ -1,0 +1,75 @@
+<button ng-click="addtrs()" class="addtr hidden">add tr</button>
+			<table class="table table-bordered " 
+			style="margin-bottom:-1px;border-bottom:0px;" >
+			<thead>
+		  		<tr>
+					 <th style="width: 22%;min-width: 270px;">Item Qty</th>
+						<th style="width: 15%;min-width: 151px;">Matched Parts</th>
+						<th style="min-width: 27%;min-width: 275px;">Distributor Results <a href="#" data-action="settings">
+															<i class="icon-cog"></i>
+														</a></th>
+						<th style="width: 36%;min-width: 363px;"><span>Cart:</span>
+							<select style="height: 26px;" ng-change="priceOptionChange(selectpriceoption)" ng-model="selectpriceoption">
+								<option value="1">最便宜</option>
+								<option value="digikey">digikey</option>
+							</select><a href="#" data-action="settings">
+															<i class="icon-cog"></i>
+														</a>
+							<span style="margin-left: 80px;">Batch :</span>
+							<input style="width: 100px;" type="text" ng-model="batch" />
+						</th>
+					</tr> </thead>
+					<tr class="active">
+						<th  style="width: 22%;min-width: 270px;">
+							<table  >
+								<tr style="text-align: center;"> 
+									<td  style="border-top:0px;" width="180">Item</td>
+									<td  style="border-top:0px;" width="80">Qty</td>
+								</tr>
+							</table>
+						</th>
+						<th style="width: 15%;min-width: 151px;">
+						<table  >
+								<tr style="text-align: center;">
+									<td style="border-top:0px;"  >
+							Manfacturer/MPN
+							</td></tr></table>
+						</th>
+						<th style="min-width: 27%;min-width: 275px;">
+							<table style="width: 100%;height: 100%;">
+								<tr style="">
+									<th style="border-top:0px;width: 25%;">digikey</th>
+									<th style="border-top:0px;width: 25%;">mouser</th>
+									<th style="border-top:0px;width: 25%;">element</th>
+									<th style="border-top:0px;width: 25%;">chip1stop</th>
+								</tr>
+							</table>
+						</th>
+						<th style="width: 36%;min-width: 363px;">
+							<table style="width: 100%;">
+								<tr style="">
+									<th style="border-top:0px;width: 34%;"> SKU</th>
+									<th style="border-top:0px;width: 22%;">Unit Price</th>
+									<th style="border-top:0px;width: 22%;">Line Total</th>
+									<th style="border-top:0px;width: 22%;">B Total</th>
+								</tr>
+							</table>
+						</th>
+					</tr>
+				
+			</table>
+			<table class="table table-bordered " id="allimfor" style="border: 0px; " >
+				<tbody >
+					<tr class="maintr" style="height: 70px;line-height: 70px;" 
+					ng-controller='pnController' ng-include="'inc/pnController.html'" onload="load()" ng-repeat="entry in tr"></tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>合计：{{trlength}} 合计数量:{{allnum}}</th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+				</tfoot>
+			</table>
+ 

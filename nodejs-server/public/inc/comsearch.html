@@ -1,0 +1,18 @@
+<div style="padding: 10px;" >
+	<input ng-model="key1" />
+	<button ng-click="search(key1)">go</button>
+	<table class="table table-striped table-hover table-bordered">
+		<thead>
+			<tr>
+				<th>name</th>
+				<th>message </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="x in qiye">
+				<td>{{x.name}}</td>
+				<td>{{x.message}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.go_top{ width:54px; position:fixed; right:0px; bottom:50px;}
+.go_top .top_butt{ width:54px; height:54px; background:url(../images/top_an_3.jpg) no-repeat; cursor:pointer; outline:none; border:none}
+.go_top .shopping_car_box{ width:54px; height:22px; margin-top:2px; background:url(../images/add_g_3.jpg) no-repeat; cursor:pointer; outline:none; border:none; text-align:center; line-height:18px; padding-top:32px; font-size:12px; position:relative}
+.go_top .shopping_car_box .number{ height:12px;position:absolute; top:7px; left:-5px; z-index:999 }
+.go_top .shopping_car_box .number .left_pic{ width:5px; height:12px; display:block; background:url(../images/number_dw_l.gif) no-repeat left}
+.go_top .shopping_car_box .number .right_pic{ height:12px; line-height:12px; color:#007fc4; font-size:11px; font-family:Arial; background:url(../images/number_dw_r.jpg) no-repeat right; padding-right:6px;  font-weight:bolder}
+.go_top .inquiry_box{ width:54px; height:22px; margin-top:2px; background:url(../images/add_bj_3.jpg) no-repeat; cursor:pointer; outline:none; border:none; line-height:32px; padding-top:32px; font-size:12px; color:#9a9a9a;  position:relative}
+.go_top .inquiry_box .number{ height:12px;position:absolute; top:7px; left:-5px; z-index:999 }
+.go_top .inquiry_box .number .left_pic{ width:5px; height:12px; display:block; background:url(../images/number_dw_l.gif) no-repeat left}
+.go_top .inquiry_box .number .right_pic{ height:12px; line-height:12px; color:#007fc4; font-size:11px; font-family:Arial; background:url(../images/number_dw_r.gif) no-repeat right; padding-right:6px; font-weight:bolder}
+
+.go_top .shopping_car_box .buy_list{ width:223px; max-height:310px; background-color:#fff; position:absolute; bottom:0px; left:-230px; z-index:1000}
+.go_top .shopping_car_box .buy_list .list_title{ width:60px; font-size:14px; line-height:28px; font-family:"Microsoft YaHei"; color:#6d6d6d; margin-left:12px;}
+.go_top .shopping_car_box .buy_list .list_more{ font-size:12px; width:38px; line-height:28px; margin-right:12px; }
+.go_top .shopping_car_box .buy_list .list_more a{color:#a4a4a4; text-decoration:none }
+.go_top .shopping_car_box .buy_list .list_more a:hover{color:#6d6d6d; text-decoration:none }
+.go_top .shopping_car_box .buy_list .list_li_show{ width:223px; height:53px; font-size:12px; }
+.go_top .shopping_car_box .buy_list .list_li_show_b{ background-color:#e7e7e7 }
+.go_top .shopping_car_box .buy_list .product_name{ line-height:30px; width:163px; height:30px; overflow:hidden; text-align:left; margin-left:12px }
+.go_top .shopping_car_box .buy_list .product_name a{ color:#007fc3; text-decoration:none}
+.go_top .shopping_car_box .buy_list .product_name a:hover{ text-decoration:underline}
+.go_top .shopping_car_box .buy_list .delet_li{ width:38px; line-height:30px; margin-left:5px;}
+.go_top .shopping_car_box .buy_list .delet_li a{ color:#a4a4a4; text-decoration:none}
+.go_top .shopping_car_box .buy_list .delet_li a:hover{ color:#6d6d6d; text-decoration:none }
+.go_top .shopping_car_box .buy_list .list_number{ width:50px;line-height:20px;text-align:left; margin-left:12px; color:#333 }
+.go_top .shopping_car_box .buy_list .list_price{ width:120px;line-height:20px;text-align:left; margin-left:12px; color:#333 }
+.go_top .shopping_car_box .buy_list .buy_list_ts{ height:40px; line-height:18px; width:223px; background:url(../img/list_ts.jpg) no-repeat 10px 2px; color:#f08519;  text-align:left; padding-left:47px; }
+.go_top .shopping_car_box .buy_list .list_show{ width:223px; max-height:275px; border:1px solid #e9e9e9; border-bottom:none}
+.go_top .shopping_car_box .buy_list .list_bom{ width:223px; height:35px; background-color:#007fc3; }
+.go_top .shopping_car_box .buy_list .list_bom .list_shop_bom{ width:151px; height:35px; background:url(../img/little_shop.jpg) no-repeat 9px center;line-height:35px; font-size:14px; color:#fff; font-family:"SimSun";  }
+.go_top .shopping_car_box .buy_list .list_bom .into_list_but{ width:72px; height:35px; background:url(../img/into_list.jpg) no-repeat; cursor:pointer; outline:none; border:none;}

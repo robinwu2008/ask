@@ -1,0 +1,3 @@
+for(var i =0 ;i<100 ;i++){
+console.log('<tr ng-show="showme('+i+')" ng-controller=\'pnController\' ng-include="\'inc/pnController.html\'" onload="load()"></tr>')
+}

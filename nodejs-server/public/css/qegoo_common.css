@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+/* 页面头部 */
+.q_top_background {
+  width: 100%;
+  background: url(../img/index_dw.gif) no-repeat center top; }
+
+.q_top {
+  width: 100%;
+  height: 26px;
+  font-size: 12px;
+  line-height: 26px; }
+  .q_top .collection a {
+    color: #272727;
+    background: url(../img/top-an-2.gif) no-repeat left center;
+    padding-left: 15px;
+    text-decoration: none; }
+    .q_top .collection a:hover {
+      color: #FF6600;
+      text-decoration: underline; }
+  .q_top .guide {
+    float: right;
+    height: 26px; }
+  .q_top .to_user {
+    color: #272727; }
+  .q_top .login a {
+    color: #272727;
+    text-decoration: none; }
+    .q_top .login a:hover {
+      text-decoration: underline; }
+  .q_top .register a {
+    color: #272727;
+    text-decoration: none; }
+    .q_top .register a:hover {
+      text-decoration: underline; }
+  .q_top .classify {
+    height: 26px;
+    margin-right: 15px; }
+    .q_top .classify a {
+      color: #272727;
+      text-decoration: none; }
+      .q_top .classify a:hover {
+        text-decoration: underline; }
+  .q_top .news {
+    height: 26px; }
+    .q_top .news a {
+      color: #272727;
+      text-decoration: none; }
+      .q_top .news a:hover {
+        text-decoration: underline; }
+  .q_top .blog a {
+    color: #272727;
+    background: url(../img/bolg.gif) no-repeat left center;
+    padding-left: 20px;
+    text-decoration: none; }
+    .q_top .blog a:hover {
+      text-decoration: underline; }
+  .q_top .account {
+    height: 26px; }
+    .q_top .account a {
+      color: #272727;
+      text-decoration: none; }
+      .q_top .account a:hover {
+        text-decoration: underline; }
+  .q_top .special_shop {
+    width: 80px;
+    height: 26px;
+    position: relative;
+    z-index: 9000;
+    color: #272727;
+    text-align: center; }
+    .q_top .special_shop.shop_logo_box {
+      width: 90px;
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      border: 1px solid #c0c0c0;
+      border-top: none;
+      padding-bottom: 3px;
+      text-align: center;
+      overflow: hidden; }
+      .q_top .special_shop.shop_logo_box.title {
+        width: 90px;
+        height: 26px;
+        color: #000;
+        background-color: #EBEBEB; }
+      .q_top .special_shop.shop_logo_box.shop_logo {
+        width: 90px;
+        overflow: hidden;
+        line-height: 25px;
+        border-bottom: 1px dotted #cdcdcd;
+        font-family: "Microsoft YaHei","SimSun";
+        font-size: 12px; }
+        .q_top .special_shop.shop_logo_box.shop_logo a {
+          color: #434343;
+          text-decoration: none; }
+          .q_top .special_shop.shop_logo_box.shop_logo a:hover {
+            color: #0080C0;
+            text-decoration: none; }
+
+/*快易购首页专用脚部*/
+.q_foot {
+  width: 420px;
+  * width: 435px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto; }
+  .q_foot .foot_guide {
+    width: 250px;
+    height: 45px;
+    border-right: 1px solid #cacaca;
+    text-align: right;
+    padding-right: 35px; }
+    .q_foot .foot_guide a {
+      line-height: 20px;
+      font-size: 12px;
+      color: #9b9b9b; }
+      .q_foot .foot_guide a:hover {
+        text-decoration: underline;
+        color: #0093db; }
+  .q_foot .suggest_text {
+    position: relative; }
+  .q_foot .sz_logo {
+    width: 130px;
+    height: 45px; }
+    .q_foot .sz_logo .img_size {
+      margin-left: 15px;
+      windth: 36px;
+      height: 36px;
+      margin-top: 3px; }
+    .q_foot .sz_logo .sz_link {
+      width: 68px;
+      height: 45px;
+      line-height: 20px;
+      margin-top: 2px;
+      font-size: 12px;
+      text-align: center;
+      font-family: "Microsoft YaHei"; }
+      .q_foot .sz_logo .sz_link a {
+        color: #9b9b9b;
+        text-decoration: none; }
+        .q_foot .sz_logo .sz_link a:hover {
+          text-decoration: underline; }
+
+.qegoo_code {
+  width: 230px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #9b9b9b; }
+
+/*快易购通用脚部*/
+.q_page_foot {
+  width: 1200px;
+  height: 116px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../img/foot_dw.gif) no-repeat left top;
+  margin-top: 20px;
+  font-size: 12px;
+  padding-top: 25px; }
+  .q_page_foot .page_foot_guide {
+    width: 180px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff; }
+    .q_page_foot .page_foot_guide a {
+      color: #909090;
+      text-decoration: none;
+      margin-left: 15px;
+      margin-right: 15px; }
+      .q_page_foot .page_foot_guide a:hover {
+        color: #0086cd;
+        text-decoration: underline; }
+    .q_page_foot .page_foot_guide span {
+      color: #d8d8d8; }
+  .q_page_foot .qegoo_page_code {
+    width: 230px;
+    line-height: 20px;
+    color: #9e9e9e;
+    text-align: center; }

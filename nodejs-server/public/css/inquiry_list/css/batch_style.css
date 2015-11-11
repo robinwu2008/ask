@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, table, img, ul,dl,dd,h1,h2,h3,h4,h5,h6, form, p , button, div{ padding:0; margin:0; border:0px }
+ul, li{ list-style:none}
+.clear{ clear:both; overflow:hidden; margin:0px;}
+
+.float_l{ float:left}
+.float_r{ float:right}
+
+
+.m_t80{ margin-top:80px}
+.m_t40{ margin-top:40px}
+.m_t24{ margin-top:24px}
+.m_t15{ margin-top:15px}
+
+.m_r40{ margin-right:40px }
+.m_r20{ margin-right:20px }
+
+
+.p_t20{ padding-top:20px;}
+
+.p_b60{ padding-bottom:60px}
+.p_b90{ padding-bottom:90px}
+.p_b30{ padding-bottom:30px}
+
+.red{ color:red}
+
+
+/*头部*/
+.top_dw{ width:100%; height:26px; background:#000}
+.top{ width:1000px; margin-left:auto; margin-right:auto; height:26px; font-size:12px; line-height:26px;}
+.top .hello{ float:left; color:#fff; }
+.top .login_other{ float:right; height:26px;}
+.top .login_other .login{ float:left;  }
+.top .login_other .login a{ color:#e47815; text-decoration:none}
+.top .login_other .login a:hover{text-decoration:underline}
+.top .login_other .register{ float:left; }
+.top .login_other .register a{ color:#e47815; text-decoration:none}
+.top .login_other .register a:hover{text-decoration:underline}
+.top .login_other .home{ float:left; height:26px; margin-right:15px;  }
+.top .login_other .home a{  color:#fff; background:url(../qegoo_images/top-an-1.gif) no-repeat left center; padding-left:25px; text-decoration:none }
+.top .login_other .home a:hover{ text-decoration:underline}
+.top .login_other .classify{ float:left; height:26px; margin-right:15px; }
+.top .login_other .classify a{  color:#fff; background:url(../qegoo_images/top-an-2.gif) no-repeat left center; padding-left:25px; text-decoration:none }
+.top .login_other .classify a:hover{ text-decoration:underline}
+.top .login_other .infor{ float:left; height:26px; margin-right:15px; }
+.top .login_other .infor a{  color:#fff; background:url(../qegoo_images/top-an-3.gif) no-repeat left center; padding-left:25px; text-decoration:none }
+.top .login_other .infor a:hover{ text-decoration:underline; }
+.top .login_other .account{ float:left; height:26px; margin-right:15px; }
+.top .login_other .account a{  color:#fff; background:url(../qegoo_images/top-an-6.gif) no-repeat left center; padding-left:25px; text-decoration:none }
+.top .login_other .account a:hover{ text-decoration:underline; }
+
+.page_top{ width:1000px; height:99px; margin-left:auto; margin-right:auto; background:url(../qegoo_images/pagetop_dw.jpg) no-repeat top right; padding-top:40px;  }
+.page_top .logo_page{ margin-left:15px; width:292px; height:70px; background:url(../qegoo_images/logo_page.gif) no-repeat}
+.page_top .help_name{ margin-left:35px; height:70px; width:160px; padding-left:35px; text-align:center; color:#bbbbbb; border-left:1px solid #e2e2e2}
+.page_top .help_name .center_help{ font-size:30px; font-family:"微软雅黑"; font-weight:600}
+.page_top .help_name .hot_tel{ font-size:18px; height:25px; background:url(../qegoo_images/hot_tel.jpg) no-repeat left center;  font-family:"微软雅黑"; padding-left:20px; line-height:25px; margin-top:5px;}
+
+.center_main{ width:1000px; overflow:hidden; margin-left:auto; margin-right:auto; margin-top:20px;}
+
+.center_main .center_left{ width:170px; overflow:hidden; border:1px solid #0086cd; border-top:4px solid #0086cd; border-bottom:3px solid #006ca5; }
+.center_main .center_left .van_list{  line-height:55px; font-size:15px; font-family:"微软雅黑"; }
+.center_main .center_left .van_list a{ color:#666; text-decoration:none ; width:155px; height:55px; display:inline-block;  padding-left:15px; border-bottom:1px dotted #8acaec}
+.center_main .center_left .van_list a:hover{ font-weight:bolder; color:#0086cd}
+.center_main .center_left .van_list a.on{ background:#dcedf6 url(../qegoo_images/hlep_arrow.jpg) no-repeat 150px center; color:#0086cd; font-weight:bolder;  }
+
+.center_main .center_right{ width:805px; overflow:hidden; border-top:4px solid #cbcbcb; border-bottom:1px solid #e4e4e4; font-family:"微软雅黑";}
+
+/* 修改密码 */
+.change_name,.change_name1{ width:130px; line-height:32px; font-size:15px; text-align:right; margin-left:48px  }
+.change_company{ font-size:15px; line-height:32px; margin-left:15px; color:#f18e19; font-weight:bolder  }
+.change_name1{ font-weight:bolder}
+.change_box{  font-size:15px; width:235px; height:30px; border:1px solid #dbdbdb; padding-left:3px; line-height:35px; margin-left:15px; color:#666; outline:none; background: }
+.change_hint{ font-size:12px; color:#a7a7a7; line-height:20px; margin-left:190px; margin-top:10px}
+.change_button{ width:71px; height:34px; background:url(../qegoo_images/help_sure.jpg) no-repeat; border:none; cursor:pointer; margin-left:195px; _margin-left:245px; margin-top:50px;}
+
+/* 修改用户信息 */
+.contacts_name{ width:95px; line-height:32px; font-size:15px; text-align:right; margin-left:26px   }
+.contacts_input1{  font-size:15px; width:130px; height:30px; border:1px solid #dbdbdb;padding-left:3px; line-height:35px; margin-left:15px; color:#666; outline:none }
+.contacts_input2{  font-size:15px; width:160px; height:30px; border:1px solid #dbdbdb; padding-left:3px; line-height:35px; margin-left:15px; color:#666; outline:none }
+.contacts_input3{  font-size:15px; width:430px; height:30px; border:1px solid #dbdbdb;  padding-left:3px; line-height:35px; margin-left:15px; color:#666; outline:none }
+.contacts_hint{ font-size:12px; color:#a7a7a7; line-height:32px; margin-left:10px }
+.contacts_button{ width:71px; height:34px; background:url(../qegoo_images/help_save.jpg) no-repeat; border:none; cursor:pointer; margin-left:140px; _margin-left:160px; margin-top:50px;}
+
+/* 内页底部 */
+.pagefoot{ width:1000px; height:116px; margin-left:auto; margin-right:auto; background:url(../qegoo_images/foot_dw.jpg) no-repeat left top; font-size:12px; padding-top:25px;}
+.pagefoot .info_link{ width:247px; height:20px; margin-left:auto; margin-right:auto; line-height:20px;  background-color:#FFF  }
+.pagefoot .info_link a{ color:#9e9e9e; text-decoration:none; margin-left:15px; margin-right:15px; float:left }
+.pagefoot .info_link a:hover{ text-decoration:underline }
+.pagefoot .info_link span{ color:#d8d8d8; float:left}
+.pagefoot .copyright{ width:230px; line-height:20px; color:#9e9e9e; margin-left:auto; margin-right:auto; margin-top:15px; text-align:center; padding-bottom:20px}
+
+/* 询价管理 */
+.inquiry_show{ width:80px; height:30px; line-height:30px; margin-top:10px; margin-left:5px; font-size:14px; text-align:right }
+.inquiry_input1{ width:170px; height:30px; line-height:30px; margin-top:10px; border:1px solid #D6D6D6; outline:none; padding-left:3px;}
+.inquiry_input1 .date_show{ width:135px; height:27px; line-height:27px; border:none; outline:none;}
+.inquiry_input1 .date_but{ width:30px; height:30px; background:url(../qegoo_images/date_pic.jpg) no-repeat center; border:none; cursor:pointer}
+
+.inquiry_choose{margin-top:10px; margin-left:5px; line-height:30px; font-size:14px;}
+
+.inquiry_table{ width:795px; overflow:hidden; margin-left:auto; margin-right:auto; border-top:1px solid #D6D6D6; border-bottom:2px solid #D6D6D6; margin-top:10px}
+.inquiry_table .inquiry_th{ border-bottom:1px solid #D6D6D6; background-color:#E7E7E7;  line-height:25px; font-size:12px; font-weight:bolder; color:#666 }
+.inquiry_table td{ padding-left:5px; font-size:12px; line-height:35px; color:#434343;}
+.inquiry_table td .detail{}
+.inquiry_table td .detail a{ text-decoration:none; color:#0080C0}
+.inquiry_table td .detail a:hover{ text-decoration:underline}
+
+.link_date{ line-height:30px; font-size:16px; color:#434343; margin-left:5px; margin-right:5px;margin-top:10px; }
+
+/* 翻页样式 */
+.digg { font-size:12px}
+.digg a{ padding-left:12px; padding-right:12px; padding-top:8px; padding-bottom:8px; border: #ddd 1px solid; border-right:none; color: #888; text-decoration: none}
+.digg a:hover {	background-color:#ddd; color: #018bd3;}
+.digg .current { padding-left:12px; padding-right:12px; padding-top:9px; padding-bottom:9px; FONT-WEIGHT: bolder; COLOR: #fff; background-color: #018bd3; }
+.digg .disabled { border: #ddd 1px solid ;padding-left:12px; padding-right:12px; padding-top:8px; padding-bottom:8px; COLOR: #ddd; }
+.digg .color_bule{ color:#018bd3}
+.digg .box_right{ border-right:#ddd 1px solid}
+
+

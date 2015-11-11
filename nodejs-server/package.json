@@ -1,0 +1,25 @@
+{
+    "name": "beiji",
+    "version": "1.0.0",
+    "author": "zuaa",
+     "main": "main.js", 
+    "dependencies": {
+		"express": "3.4.2",
+		"ejs": "0.8.4",
+		"jade": "0.35.0",
+		"mysql": "2.0.0-alpha9",
+		"mongodb": "1.3.20",
+		"cheerio": "0.16.0",
+		"request": "2.36.0",
+		"line-reader": "0.2.3",
+		"cron": "1.0.4",
+		"nodemailer": "0.6.5",
+		 "async": "*",
+		"mustache": "0.8.2",
+		"bufferhelper": "0.2.0",
+		"iconv-lite": "0.4.4",
+		"pg":"*",
+		"node-qqwry":"*"
+    }
+}
+

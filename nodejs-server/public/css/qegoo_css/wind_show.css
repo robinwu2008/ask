@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+/*搜索结果页 买家服务阶梯价*/
+.inquiry_box {
+  width: 240px;
+  padding: 7px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  z-index: 0;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px;
+  overflow: hidden; }
+  .inquiry_box .cost_buy {
+    width: 230px;
+    height: 25px;
+    color: #ea8105;
+    line-height: 25px;
+    background: url(/img/prompt_wind.gif) no-repeat 20px center; }
+  .inquiry_box .buy_list_qqline {
+    width: 235px;
+    color: #333333; }
+    .inquiry_box .buy_list_qqline .qq_take {
+      width: 82px;
+      height: 28px;
+      border: none;
+      outline: none; }
+    .inquiry_box .buy_list_qqline .tel_link_buy {
+      width: 125px;
+      font-size: 12px;
+      height: 28px;
+      line-height: 35px;
+      text-align: left; }
+  .inquiry_box .num_input {
+    width: 70px;
+    height: 24px;
+    _height: 20px;
+    outline: none;
+    padding-left: 3px;
+    border: 1px solid #cccccc; }
+  .inquiry_box .numb_up_down {
+    width: 13px;
+    height: 22px; }
+    .inquiry_box .numb_up_down .number_up {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_up.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      border: none; }
+    .inquiry_box .numb_up_down .number_down {
+      width: 13px;
+      height: 11px;
+      background: url(/img/numb_down.gif) no-repeat;
+      cursor: pointer;
+      outline: none;
+      margin-top: 2px;
+      border: none; }
+  .inquiry_box .inquiry_sure_butt {
+    width: 52px;
+    height: 23px;
+    background: url(/img/inquiry_sure.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    border: none; }
+
+.inquiry_box2 {
+  width: 135px; }
+
+.inquiry_name {
+  width: 50px;
+  line-height: 25px; }
+
+.inquiry_price_box {
+  width: 150px; }
+  .inquiry_price_box .inquiry_price {
+    width: 145px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #e6e6e6; }
+    .inquiry_price_box .inquiry_price .number2 {
+      width: 50px;
+      text-align: left;
+      font-weight: bolder;
+      color: #6d6d6d; }
+    .inquiry_price_box .inquiry_price .price2 {
+      text-align: left;
+      color: #333333; }
+
+/* 官网详情 */
+.Official_set_box {
+  width: 300px;
+  padding: 7px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px;
+  overflow: hidden; }
+
+/* 回到页面顶部 */
+.go_top {
+  width: 54px;
+  height: 110px;
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  z-index: 999; }
+  .go_top .top_butt {
+    width: 54px;
+    height: 54px;
+    background: url(/img/top_an_3.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none; }
+  .go_top .shopping_car_box {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    margin-top: 2px;
+    background: url(/img/add_g_3.gif) no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 12px; }
+    .go_top .shopping_car_box .number {
+      height: 12px;
+      position: absolute;
+      top: 7px;
+      left: -5px;
+      z-index: 9999; }
+      .go_top .shopping_car_box .number .left_pic {
+        width: 5px;
+        height: 12px;
+        display: block;
+        background: url(/img/number_dw_l.gif) no-repeat left; }
+      .go_top .shopping_car_box .number .right_pic {
+        height: 12px;
+        line-height: 12px;
+        color: #007fc4;
+        font-size: 11px;
+        font-family: Arial;
+        background: url(/img/number_dw_r.gif) no-repeat right;
+        padding-right: 6px;
+        font-weight: bolder; }
+    .go_top .shopping_car_box .buy_list {
+      width: 223px;
+      background-color: white;
+      position: absolute;
+      bottom: 35px;
+      left: -230px;
+      z-index: 1000; }
+      .go_top .shopping_car_box .buy_list .list_title {
+        width: 60px;
+        font-size: 14px;
+        line-height: 28px;
+        font-family: "SimSun";
+        color: #272727;
+        margin-left: 12px; }
+      .go_top .shopping_car_box .buy_list .list_more {
+        font-size: 12px;
+        width: 42px;
+        line-height: 28px;
+        margin-right: 12px; }
+        .go_top .shopping_car_box .buy_list .list_more a {
+          color: #9b9b9b;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .list_more a:hover {
+            color: gray6d;
+            text-decoration: none; }
+      .go_top .shopping_car_box .buy_list .list_li_show {
+        width: 223px;
+        height: 53px;
+        font-size: 12px; }
+      .go_top .shopping_car_box .buy_list .list_li_show_b {
+        background-color: #e6e6e6; }
+      .go_top .shopping_car_box .buy_list .product_name {
+        line-height: 30px;
+        width: 150px;
+        height: 30px;
+        overflow: hidden;
+        text-align: left;
+        margin-left: 12px; }
+        .go_top .shopping_car_box .buy_list .product_name a {
+          color: #0086cd;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .product_name a:hover {
+            text-decoration: underline; }
+      .go_top .shopping_car_box .buy_list .delet_li {
+        width: 38px;
+        line-height: 30px;
+        margin-left: 5px; }
+        .go_top .shopping_car_box .buy_list .delet_li a {
+          color: #9b9b9b;
+          text-decoration: none; }
+          .go_top .shopping_car_box .buy_list .delet_li a:hover {
+            color: gray6d;
+            text-decoration: none; }
+      .go_top .shopping_car_box .buy_list .list_number {
+        width: 70px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 12px;
+        color: #333333; }
+      .go_top .shopping_car_box .buy_list .list_price {
+        width: 120px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 12px;
+        color: #333333; }
+      .go_top .shopping_car_box .buy_list .buy_list_ts {
+        height: 40px;
+        line-height: 18px;
+        width: 223px;
+        background: white url(/img/list_ts.gif) no-repeat 10px 2px;
+        color: #ea8105;
+        text-align: left;
+        padding-left: 47px; }
+      .go_top .shopping_car_box .buy_list .list_show {
+        width: 223px;
+        height: 275px;
+        border: 1px solid #e6e6e6;
+        border-bottom: none; }
+      .go_top .shopping_car_box .buy_list .list_bom {
+        width: 223px;
+        height: 35px;
+        background-color: #0086cd; }
+        .go_top .shopping_car_box .buy_list .list_bom .list_shop_bom {
+          width: 151px;
+          height: 35px;
+          background: url(/img/little_shop.gif) no-repeat 9px center;
+          line-height: 35px;
+          font-size: 14px;
+          color: white;
+          font-family: "SimSun";
+          padding-left: 35px; }
+        .go_top .shopping_car_box .buy_list .list_bom .into_list_but {
+          width: 60px;
+          height: 35px;
+          background-color: #0086cd;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          font-size: 12px;
+          color: #ffbd2e;
+          font-family: "SimSun";
+          font-weight: bolder; }
+          
+     /* 人工服务 弹出窗口*/
+.artificial_service {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #0086cd;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  z-index: 0;
+  background-color: white;
+  color: #333333;
+  font-weight: normal;
+  line-height: 20px; }
+  .artificial_service .tel_qq {
+    width: 105px;
+    border-bottom: 1px dotted #cccccc;
+    color: #333333;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .artificial_service .qq_button {
+    width: 86px;
+    height: 24px;
+    line-height: 22px;
+    background: #18a0ea url(/img/artif_q.gif) no-repeat 5px center;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    color: #fff;
+    cursor: pointer; }
+
+          
